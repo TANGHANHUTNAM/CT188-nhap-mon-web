@@ -1,7 +1,7 @@
 body {
     height: 40vh;
     width: 100%;
-    font-family: sans-serif;
+    font-family: Tahoma, Verdana ,sans-serif;
     background-color: blue;
     display: grid;
     grid-template-areas:
@@ -205,8 +205,8 @@ body {
 }
 
 .footer_copyright {
-    font: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     padding-top: 15px;
 }
 
