@@ -11,10 +11,10 @@ body {
     background-color: white;
 }
 
-/* HEADER */
+            /* ---------------HEADER--------------- */
 .header {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     grid-area: header-cell;
     display: grid;
     grid-template-areas: 
@@ -94,7 +94,7 @@ body {
 }
 
 .login-register i {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .login-register:hover {
@@ -118,7 +118,7 @@ body {
 }
 
 .shopping-cart i {
-    font-size: 30px;
+    font-size: 25px;
 }
 /* NAV-BAR */
 .navbar2 {
@@ -126,6 +126,7 @@ body {
     display: flex;
     background-color: #222222;
     padding: 25px 13%;
+    height: 25%;
 }
 
 .navbar2 a {
@@ -136,7 +137,6 @@ body {
     margin-right: 50px;
     padding: 4px;
     text-transform: uppercase;
-
 }
 
 .navbar2 a:hover {
@@ -163,71 +163,29 @@ body {
     opacity: 1;
     background-color: blue;
 }
-/* MAIN */
+
+
+
+            /* ----------------MAIN-------------- */
 .main {
     grid-area: main-cell;
     margin: 0 13%;
 }
 
 
-/* FOOTER */
+
+
+            /* ---------------FOOTER------------- */
 .footer {
     grid-area: footer-cell;
     background-color: none;
-    width: 100%;
     border-top: 5px solid red;
-}
-
-.footer_container-columns {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    margin: 10px 13%;
+    grid-template-rows: auto auto;
+    margin: 0 13%;
 }
-
-.footer_container-row {
-    padding: 10px 13%;
-    background-color: white;
-    font-size: 20px;
-}
-
-.footer_container-list h3 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-}
-
-.list {
-    padding-left: 0;
-    list-style: none;
-}
-
-.link {
-    display: flex;
-    padding: 10px 10px;
-    font-size: 20px;
-    align-items: center;
-    justify-items: center;
-    color: black;
-
-}
-
-.link a {
-    text-decoration: none;
-    color: black;
-}
-
-.link i {
-    font-size: 45px;
-    margin: -1px 8px 0 0;
-    color: black;
-}
-
-.link a:hover {
-    color: red;
-    transition: 0.3s;
-}
-
-.backtop i{
+/* Footer-Copyright-Backtop */
+.footer_backtop i {
     width: 50px;
     height: 50px;
     background-color: black;
@@ -241,7 +199,44 @@ body {
     bottom: 40px;
 }
 
-.backtop i:hover{
+.footer_backtop i:hover {
     background-color: red;
     color: black;
+}
+
+.footer_copyright {
+    font: 900;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+/* Footer-Contact */
+.footer_contact {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.footer_contact-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact-list h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.footer_contact-list i {
+    font-size: 24px;
+}
+.footer_contact-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    color: rgb(86, 84, 84);
+}
+
+.footer_contact-list a:hover{
+    color: red;
 }
