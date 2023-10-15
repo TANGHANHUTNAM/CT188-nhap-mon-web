@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ</title>
-    <link rel="shortcut icon" href="/img/logo.png">
+    <link rel="shortcut icon" href="/img/logo.ico">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="flex-container">
+        <div class="navbar1">
             <!-- LOGO -->
             <a class="logo" href="trangchu.html">
                 <img src="/img/logo.png" alt="logo" id="logo">
@@ -22,14 +22,14 @@
             <form class="search-bar">
                 <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
                 <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
                 </button>
             </form>
             
             <!-- LOGIN/REGISTER -->
-            <a href="dangnhap-dangky.html">
+            <a class="login-register" href="dangnhap-dangky.html">
                 <i class="fa-solid fa-user"></i>
-                Đăng Nhập|Đăng Ký
+                Đăng Ký | Đăng Nhập
             </a>
             
             <!-- SHOPPING-CART -->
@@ -39,7 +39,7 @@
         </div>
 
         <!-- NAVBAR -->
-        <nav class="navbar">
+        <nav class="navbar2">
             <a href="trangchu.html">Trang Chủ</a>
             <a href="sanpham.html">Sản Phẩm</a>
             <a href="lienhe.html">Liên Hệ</a>
@@ -47,11 +47,76 @@
     </header>
 
     <main class="main">
-
+        content
     </main>
 
     <footer class="footer">
-
+        <div class="footer_container-columns">    
+            <div class="footer_container-list">
+                <h3>LIÊN HỆ</h3>
+                <ul class="list">
+                    <li class="link">
+                        <i class="fa-solid fa-location-dot"></i> Đại học Cần Thơ, Đường 3/2, Q.Ninh Kiều, TP.Cần Thơ
+                    </li>
+                    <li class="link">
+                        <i class="fa-solid fa-envelope"></i> ctu@gmail.com
+                    </li>
+                    <li class="link">
+                        <i class="fa-solid fa-phone"></i> 0123456789
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_container-list">
+                <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                <ul class="list">
+                    <li class="link">
+                        <a href="">
+                            <i class="fa-solid fa-qrcode"></i> QR CODE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="">
+                            <i class="fa-solid fa-money-bill"></i> Tiền mặt
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="">
+                            <i class="fa-solid fa-credit-card"></i> Internet Banking
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_container-list">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <ul class="list">
+                    <li class="link">
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="">
+                            <i style="width: 40px;" class="fa-brands fa-square-instagram"></i> Instagram
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                            Youtube
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_container-row">
+            &copy; Bản quyền thuộc về nhóm 2 CT188-WEB
+        </div>
+        <div class="backtop">
+            <a href="#logo">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
     </footer>
 </body>
 </html>
