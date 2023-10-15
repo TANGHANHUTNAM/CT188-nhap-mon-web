@@ -14,7 +14,7 @@ body {
             /* ---------------HEADER--------------- */
 .header {
     width: 100%;
-    height: 30vh;
+    height: 23vh;
     grid-area: header-cell;
     display: grid;
     grid-template-areas: 
@@ -169,7 +169,7 @@ body {
             /* ----------------MAIN-------------- */
 .main {
     grid-area: main-cell;
-    margin: 0 13%;
+    margin: 40px 13%;
 }
 
 
@@ -179,10 +179,8 @@ body {
 .footer {
     grid-area: footer-cell;
     background-color: none;
-    border-top: 5px solid red;
     display: grid;
     grid-template-rows: auto auto;
-    margin: 0 13%;
 }
 /* Footer-Copyright-Backtop */
 .footer_backtop i {
@@ -206,8 +204,13 @@ body {
 
 .footer_copyright {
     font-weight: 500;
-    font-size: 20px;
-    padding-top: 15px;
+    background-color: #827c7c;
+    height: 50px;
+}
+
+.footer_copyright p {
+    padding: 0 13%;
+    font-size: 18px;
 }
 
 /* Footer-Contact */
@@ -215,6 +218,8 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
+    padding: 0 13% 10px;
+    background-color: #b8b1b1;
 }
 
 .footer_contact-list {
