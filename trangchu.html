@@ -12,14 +12,15 @@
 </head>
 <body>
     <header class="header">
-        <div class="navbar1">
+        <!-- NAVBAR1 -->
+        <div class="header_navbar1">
             <!-- LOGO -->
-            <a class="logo" href="trangchu.html">
+            <a class="header_navbar1-logo" href="trangchu.html">
                 <img src="/img/logo.png" alt="logo" id="logo">
             </a>
 
             <!-- SEARCH-BAR -->
-            <form class="search-bar">
+            <form class="header_navbar1-search">
                 <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
                 <button>
                     <i class="fa-solid fa-magnifying-glass icon-search"></i>
@@ -27,23 +28,48 @@
             </form>
             
             <!-- LOGIN/REGISTER -->
-            <a class="login-register" href="dangnhap-dangky.html">
+            <a class="header_navbar1-login" href="dangnhap-dangky.html">
                 <i class="fa-solid fa-user"></i>
                 Đăng Ký | Đăng Nhập
             </a>
             
             <!-- SHOPPING-CART -->
-            <a class="shopping-cart" href="giohang.html">
+            <a class="header_navbar1-shoppingcart" href="giohang.html">
                 <i class="fa-solid fa-cart-shopping"></i>Giỏ Hàng
             </a>
         </div>
 
-        <!-- NAVBAR -->
-        <nav class="navbar2">
+        <!-- NAVBAR2 -->
+        <nav class="header_navbar2">
             <a href="trangchu.html">Trang Chủ</a>
             <a href="sanpham.html">Sản Phẩm</a>
             <a href="lienhe.html">Liên Hệ</a>
         </nav>
+        
+        <!-- NAVBAR-MOBILE -->
+        <div class="mobile">
+            <label for="mobile_nav-input" class="mobile_bar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <input type="checkbox" id="mobile_nav-input" class="nav_input">
+
+            <label for="mobile_nav-input" class="mobile_overlay">
+            </label>
+
+            <nav class="mobile_nav">
+                <label for="mobile_nav-input" class="mobile_nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="mobile_nav-list">
+                    <a href="trangchu.html" class="mobile_nav-link">Trang chủ</a>
+                    <a href="dangnhap-dangky.html" class="mobile_nav-link">Đăng nhập</a>
+                    <a href="sanpham.html" class="mobile_nav-link">Sản phẩm</a>
+                    <a href="lienhe.html" class="mobile_nav-link">Liên hệ</a>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
     <main class="main">
@@ -239,7 +265,7 @@
                     </div>
                 </div>
                 <div class="contact_list3-payment">
-                    <h3>Hình thức thanh toán</h3>
+                    <h3>Phương thức thanh toán</h3>
                     <div>
                         <img src="/img/payment1.webp" alt="">
                         <img src="/img/payment2.webp" alt="">
