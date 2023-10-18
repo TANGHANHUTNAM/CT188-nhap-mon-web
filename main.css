@@ -22,11 +22,12 @@ body {
     background-image: url(/img/background1.png);
     align-items: center;
     justify-content: space-between;
-    padding: 5px 13%;
+    padding: 0 13%;
 }
 
 #logo {
     width: 80px;
+    margin-right: 20px;
 }
 
 /* SEARCH */
@@ -38,6 +39,7 @@ body {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 .header_navbar1-search > input {
@@ -70,43 +72,59 @@ body {
 
 .icon-search:hover {
     color: #1786F9;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 /* LOGIN */
 .header_navbar1-login {
-    font-size: 20px;
-    text-decoration: none;
     color: white;
     background-color: transparent;
-    text-align: center;
     text-transform: uppercase;
-    font-weight: 550;
+    margin-right: 20px;
 }
 
+.header_navbar1-login a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    align-items: center;
+}
+
+.header_navbar1-login div {
+    padding: 5px;
+}
 .header_navbar1-login i {
     font-size: 25px;
 }
 
-.header_navbar1-login:hover {
+.header_navbar1-login a:hover {
     color: #1786F9;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 /* SHOPPING-CART */
 .header_navbar1-shoppingcart {
-    text-align: center;
-    font-size: 20px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
-    font-weight: 550;
 }   
 
-.header_navbar1-shoppingcart:hover {
+.header_navbar1-shoppingcart a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header_navbar1-shoppingcart div {
+    padding: 5px;
+}
+
+.header_navbar1-shoppingcart a:hover {
     color: #1786F9;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .header_navbar1-shoppingcart i {
@@ -254,6 +272,12 @@ body {
     margin: 10px 13%;
 }
 
+@media (max-width: 1280px){
+    .main {
+        margin-left: 0;
+    }
+}
+
 
             /* ---------------FOOTER------------- */
 .footer {
@@ -367,6 +391,7 @@ body {
 
 .footer_contact-list1 {
     width: 450px;
+    margin-right: 5px;
 }
 
 .footer_contact-list1 h3 {
@@ -403,6 +428,7 @@ body {
     display: flex;
     width: auto;
     flex-direction: column;
+    margin-right: 5px;
 }
 
 .footer_contact-list2 h3 {
@@ -424,6 +450,7 @@ body {
 .footer_contact-list3 {
     display: flex;
     flex-direction: column;
+    margin-right: 5px;
 }
 
 .contact_list3-follow h3 {
