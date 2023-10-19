@@ -1,14 +1,19 @@
 .main {
     display: grid;
-    grid-template-rows: auto;
-    border-radius: 5px;
-    width: 1124px;
+    grid-template-columns: auto;
     gap: 15px 0;
+    padding: 0 13%;
+}
+
+@media (max-width: 1280px) {
+    .main {
+        padding: 0px;
+    }
 }
 
             /* INTRODUCE-1 */
 .main_introduce1 img {
-    width: 1124px;
+    width: 100%;
     height: 250px;
     border-radius: 10px;
 }
@@ -51,6 +56,7 @@
     padding: 15px;
     background-color: white;
     border-radius: 6px;
+    width: 100%;
 }
 
 .main_product-heading {
@@ -183,6 +189,7 @@ i.product_item-like-fill {
     background-color: white;
     border-radius: 6px;
     padding: 10px 15px;
+    width: 100%;
 }
 
 .main_catalog-heading {
