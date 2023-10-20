@@ -2,13 +2,6 @@
     display: grid;
     grid-template-columns: auto;
     gap: 15px 0;
-    padding: 0 13%;
-}
-
-@media (max-width: 1280px) {
-    .main {
-        padding: 0px;
-    }
 }
 
             /* INTRODUCE-1 */
@@ -83,7 +76,7 @@
 
 .main_product-list {
     display: flex;
-    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .main_product-item {
@@ -93,6 +86,9 @@
     overflow: hidden;
     padding: 5px;
     border-radius: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 5px;
 }
 
 .main_product-item img {
