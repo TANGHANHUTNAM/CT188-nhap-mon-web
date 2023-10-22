@@ -6,7 +6,6 @@
 }
 
 body {
-    width: 100%;
     background-color: blue;
     display: grid;
     grid-template-rows: auto auto auto;
@@ -26,7 +25,7 @@ body {
 /* NAV-BAR */
 .header_navbar1 {
     display: flex;
-    background-image: url(/img/background1.png);
+    background-image: url(./img/background1.png);
     align-items: center;
     justify-content: space-between;
     padding: 8px 13%;
@@ -245,7 +244,7 @@ body {
     opacity: 1;
 }
 
-@media (max-width: 1110px){
+@media (max-width: 767px){
     .mobile_bar {
         display: block;
     }
@@ -287,9 +286,8 @@ body {
             /* ---------------FOOTER------------- */
 .footer {
     display: grid;
-    grid-template-rows: auto auto auto;
+    gap: 20px;
     background-color: #212529;
-    width: 100%;
 }
 /* Footer-Copyright-Backtop */
 .footer_backtop i {
@@ -313,13 +311,11 @@ body {
 
 .footer_copyright {
     background-color:#2b2f32;
-    height: 50px;
-    padding: 15px 0;
+    padding: 10px 0;
     border-top: 1px solid rgb(131, 114, 114);
 }
 
 .footer_copyright p {
-    padding: 0 13%;
     font-weight: 200;
     font-size: 18px;
     text-align: center;
@@ -331,35 +327,38 @@ body {
 .footer_container {
     display: flex;
     background-color: #1786F9;
-    justify-content: space-between;
-    padding: 20px 0;
-    margin: 2% 13% 2%;
+    margin: 20px 13% 0;
     align-items: center;
     border-radius: 10px;
+    height: 80px;
+
 }
 
-.footer_container h2 {
+.footer_container p {
     color: rgb(239, 232, 232);
-    padding: 10px;
-    margin: 15px;
+    width: 40%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 2%;
 }
 
 .footer_container-input{
     padding: 10px;
+    margin: auto;
+    width: 60%;
 }
 
 .footer_container-input form {
-    width: 550px;
     height: 50px;
     background-color: white;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 .footer_container-input button {
-    width: 80px;
+    width: 20%;
     height: 100%;
     border-radius: 10px;
     border: none;
@@ -379,51 +378,42 @@ body {
     outline: none;
     color: black;
     font-size: 19px;
-    padding-left: 15px;
+    padding-left: 3%;
 }
 
 /* FOOTER-CONTACT */
 .footer_contact {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
     justify-content: space-between;
-    padding: 20px 13%;
+    padding: 0 13%;
     color: #ffffff;
     font-size: 13px;
     font-weight: 500;
 }
 
 /* CONTACT-LIST1 */
-
-.footer_contact-list1 {
-    width: 350px;
-    margin-right: 5px;
-}
-
-.footer_contact-list1 h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
 .footer_contact-list1 p {
     display: inline;
     text-align: justify;
-    font-size: 13px;
 }
 
+.footer_contact-list1 {
+    width: 350px;
+}
 .list1-content1 {
-    margin-left: 12px;
+    margin-left: 10px;
 }
 
 .list1-content2 {
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
 .list1-content3 {
-    margin-left: 5px;
+    margin-left: 4px;
 }
 
 .footer_contact-list1 div {
-    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .footer_contact-list1 i {
@@ -433,48 +423,56 @@ body {
 /* CONTACT-LIST2 */
 .footer_contact-list2 {
     display: flex;
-    width: auto;
     flex-direction: column;
-    margin-right: 5px;
-}
-
-.footer_contact-list2 h3 {
-    margin: 0;
-    margin-bottom: 10px;
 }
 
 .footer_contact-list2 a {
     text-decoration: none;
     color: white;
-    padding: 5px 0;
+    padding-top: 5px;
 }
 
 .footer_contact-list2 a:hover {
-    color: rgb(216, 97, 97);
+    color: #1786F9;
 }
 
 /* CONTACT-LIST3 */
 .footer_contact-list3 {
     display: flex;
     flex-direction: column;
-    margin-right: 5px;
-}
-
-.contact_list3-follow h3 {
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-.contact_list3-follow a {
-    margin-right: 10px;
 }
 
 .contact_list3-follow img {
-    width: 35px;
-    padding: 10px 0;
+    width: 25px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
-.contact_list3-payment h3 {
-    margin: 10px 0 20px
+.contact_list3-payment img {
+    width: 50px;
+    margin-top: 5px;
 }
 
+@media (max-width: 1023px) {
+    .footer_contact {
+        padding: 0;
+    }
+    .footer_container {
+        margin: 20px 0 0;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer_contact {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    
+    .footer_contact-col {
+        width: 100%;
+    }
+    .footer_container {
+        height: auto;
+    }
+}
