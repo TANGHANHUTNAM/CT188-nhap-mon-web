@@ -1,0 +1,80 @@
+@media (min-width: 767px) and (max-width: 1023px) {
+    /* header */
+    .header_navbar1 {
+        padding: 8px 0;
+    }
+
+    .header_navbar2 {
+        padding: 13px 0;
+    }
+    
+    /* main */
+    .main {
+        padding: 0;
+    }
+
+    /* footer */
+    .footer_contact {
+        padding: 0;
+    }
+    .footer_container {
+        margin: 20px 0 0;
+        border-radius: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    /* header */
+    .mobile {
+        display: block; 
+    }
+    .header_navbar1 {
+        display: none;
+    }
+
+    .header_navbar2 {
+        display: none;
+    }
+    #logo {
+        width: 120px;
+        margin: 0;
+    }
+    
+    /* main */
+    .main {
+        padding: 0;
+    }
+
+    /* footer */
+    .footer_contact {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        padding: 15px 0 0;
+    }
+    
+    .footer_contact-col {
+        width: 100%;
+    }
+    .footer_container {
+        margin: 20px 0 0;
+        border-radius: 0;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .footer_container-input {
+        width: 70%;
+    }
+    .footer_container-input input::placeholder {
+            font-size: 15px;
+        }
+    .footer_container-input button {
+            width: 30% ;
+        }
+    .footer_container p {
+        width: 30%;
+        font-size: 15px;
+    }
+}

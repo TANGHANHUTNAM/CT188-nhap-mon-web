@@ -12,12 +12,14 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="lienhe.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <header class="header">
         <!-- NAVBAR1 -->
         <div class="header_navbar1">
+    
             <!-- LOGO -->
             <a class="header_navbar1-logo" href="trangchu.html">
                 <img src="./img/logo.png" alt="logo" id="logo">
@@ -60,26 +62,62 @@
     
         <!-- NAVBAR-MOBILE -->
         <div class="mobile">
-            <label for="mobile_nav-input" class="mobile_bar">
-                <i class="fa-solid fa-bars"></i>
-            </label>
+            <div class="mobile_nav1">
+                <div class="mobile_nav1-group1">
+                    <label for="mobile_nav-input" class="mobile_bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
     
-            <input type="checkbox" id="mobile_nav-input" class="nav_input">
+                    <input type="checkbox" id="mobile_nav-input" class="nav_input">
     
-            <label for="mobile_nav-input" class="mobile_overlay">
-            </label>
+                    <label for="mobile_nav-input" class="mobile_overlay">
+                    </label>
     
-            <nav class="mobile_nav">
-                <label for="mobile_nav-input" class="mobile_nav-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </label>
-                <div class="mobile_nav-list">
-                    <a href="trangchu.html" class="mobile_nav-link">Trang chủ</a>
-                    <a href="dangnhap-dangky.html" class="mobile_nav-link">Đăng nhập</a>
-                    <a href="sanpham.html" class="mobile_nav-link">Sản phẩm</a>
-                    <a href="lienhe.html" class="mobile_nav-link">Liên hệ</a>
+                    <nav class="mobile_nav">
+                        <label for="mobile_nav-input" class="mobile_nav-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                        <div class="mobile_nav-list">
+                            <a href="trangchu.html" class="mobile_nav-link">Trang chủ</a>
+                            <a href="dangnhap-dangky.html" class="mobile_nav-link">Đăng nhập</a>
+                            <a href="sanpham.html" class="mobile_nav-link">Sản phẩm</a>
+                            <a href="lienhe.html" class="mobile_nav-link">Liên hệ</a>
+                        </div>
+                    </nav>
+                    <div style="color: #1786F9; font-size: 20px;">|</div>
+                    <!-- LOGIN/REGISTER -->
+                    <div class="header_navbar1-login">
+                        <h3>
+                            <a href="dangnhap-dangky.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </h3>
+                    </div>
                 </div>
-            </nav>
+                <!-- LOGO -->
+                <a class="header_navbar1-logo" href="trangchu.html">
+                    <img src="./img/logo.png" alt="logo" id="logo">
+                </a>
+                <div class="mobile_nav1-group3">
+                    <!-- SHOPPING-CART -->
+                    <div style="color: #1786F9; font-size: 20px; margin: 2px 5px 0 0;">|</div>
+                    <div class="header_navbar1-shoppingcart">
+                        <h3>
+                            <a href="giohang.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_search">
+                <form class="mobile_search-mobile">
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass icon-search-mobile"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
 
