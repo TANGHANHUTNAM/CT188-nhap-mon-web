@@ -19,15 +19,14 @@
     <header class="header">
         <!-- NAVBAR1 -->
         <div class="header_navbar1">
-    
             <!-- LOGO -->
             <a class="header_navbar1-logo" href="trangchu.html">
-                <img src="./img/logo.png" alt="logo" id="logo">
+                <img src="./img/logo.png" alt="logo" id="logo" />
             </a>
     
             <!-- SEARCH-BAR -->
             <form class="header_navbar1-search">
-                <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
                 <button>
                     <i class="fa-solid fa-magnifying-glass icon-search"></i>
                 </button>
@@ -58,6 +57,8 @@
             <a href="trangchu.html">Trang Chủ</a>
             <a href="sanpham.html">Sản Phẩm</a>
             <a href="lienhe.html">Liên Hệ</a>
+            <a href="">Khuyến Mãi</a>
+            <a href="">Tin Tức</a>
         </nav>
     
         <!-- NAVBAR-MOBILE -->
@@ -67,24 +68,73 @@
                     <label for="mobile_nav-input" class="mobile_bar">
                         <i class="fa-solid fa-bars"></i>
                     </label>
-    
-                    <input type="checkbox" id="mobile_nav-input" class="nav_input">
-    
-                    <label for="mobile_nav-input" class="mobile_overlay">
-                    </label>
-    
+                    <input type="checkbox" id="mobile_nav-input" class="nav_input" />
+                    <label for="mobile_nav-input" class="mobile_overlay"> </label>
                     <nav class="mobile_nav">
-                        <label for="mobile_nav-input" class="mobile_nav-close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </label>
+    
                         <div class="mobile_nav-list">
-                            <a href="trangchu.html" class="mobile_nav-link">Trang chủ</a>
-                            <a href="dangnhap-dangky.html" class="mobile_nav-link">Đăng nhập</a>
-                            <a href="sanpham.html" class="mobile_nav-link">Sản phẩm</a>
-                            <a href="lienhe.html" class="mobile_nav-link">Liên hệ</a>
+    
+                            <div class="mobile_nav-list-catalog">
+    
+                                <label for="mobile_nav-input" class="mobile_nav-close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+    
+                                <div class="mobile_nav-list-catalog-heading">
+                                    <p>DANH MỤC SẢN PHẨM</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="mobile_nav-list-link">
+                                <a href="trangchu.html" class="mobile_nav-link">
+                                    <i class="fa-solid fa-house"></i>
+                                    <p>Trang chủ</p>
+                                </a>
+                                <a href="dangnhap-dangky.html" class="mobile_nav-link">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                    <p>Đăng nhập</p>
+                                </a>
+                                <a href="sanpham.html" class="mobile_nav-link">
+                                    <i class="fa-solid fa-microchip"></i>
+                                    <p>Sản phẩm</p>
+                                </a>
+                                <a href="lienhe.html" class="mobile_nav-link">
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <p>Liên hệ</p>
+                                </a>
+                                <a href="giohang.html" class="mobile_nav-link">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <p>Giỏ hàng</p>
+                                </a>
+                                <a href="" class="mobile_nav-link">
+                                    <i class="fa-solid fa-percent"></i>
+                                    <p>Khuyến mãi</p>
+                                </a>
+                                <a href="" class="mobile_nav-link">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                    <p>Hướng dẫn thanh toán</p>
+                                </a>
+                                <a href="" class="mobile_nav-link">
+                                    <i class="fa-solid fa-user-shield"></i>
+                                    <p>Chính sách bảo hành</p>
+                                </a>
+                            </div>
+    
+                            <div class="mobile_nav-list-phone">
+                                <div class="mobile_nav-list-phone-item">
+                                    <i class="fa-solid fa-phone" style="color: red;"></i>
+                                    <p>08:00 - 21:00</p>
+                                </div>
+                                <div class="mobile_nav-list-phone-item">
+                                    <i class="fa-regular fa-clock" style="color: red;"></i>
+                                    <p>0292 3832 663</p>
+                                </div>
+                            </div>
                         </div>
+    
                     </nav>
-                    <div style="color: #1786F9; font-size: 20px;">|</div>
+                    <div style="color: #1786f9; font-size: 20px">|</div>
                     <!-- LOGIN/REGISTER -->
                     <div class="header_navbar1-login">
                         <h3>
@@ -96,11 +146,13 @@
                 </div>
                 <!-- LOGO -->
                 <a class="header_navbar1-logo" href="trangchu.html">
-                    <img src="./img/logo.png" alt="logo" id="logo">
+                    <img src="./img/logo.png" alt="logo" id="logo" />
                 </a>
                 <div class="mobile_nav1-group3">
                     <!-- SHOPPING-CART -->
-                    <div style="color: #1786F9; font-size: 20px; margin: 2px 5px 0 0;">|</div>
+                    <div style="color: #1786f9; font-size: 20px; margin-top: 6px">
+                        |
+                    </div>
                     <div class="header_navbar1-shoppingcart">
                         <h3>
                             <a href="giohang.html">
@@ -112,7 +164,7 @@
             </div>
             <div class="mobile_search">
                 <form class="mobile_search-mobile">
-                    <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
                     <button>
                         <i class="fa-solid fa-magnifying-glass icon-search-mobile"></i>
                     </button>
