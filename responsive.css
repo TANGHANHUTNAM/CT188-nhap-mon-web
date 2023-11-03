@@ -10,12 +10,13 @@
     
     /* main */
     .main {
-        padding: 0;
+        padding: 0 10px;
     }
 
     /* footer */
     .footer_contact {
         padding: 0;
+        margin: 0 20px;
     }
     .footer_container {
         margin: 20px 0 0;
@@ -43,7 +44,7 @@
     
     /* main */
     .main {
-        padding: 0;
+        padding: 0 10px;
     }
 
     /* footer */
@@ -51,6 +52,7 @@
         flex-wrap: wrap;
         row-gap: 20px;
         padding: 15px 0 0;
+        margin: 0 5px;
     }
     
     .footer_contact-col {
