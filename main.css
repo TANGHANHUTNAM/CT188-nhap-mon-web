@@ -2,15 +2,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif, Verdana, Tahoma;
+    font-family: Tahoma, sans-serif, Verdana;
 }
 
 :root {
     --color-white-one: #f3f3f3;
     --color-white-two: white;
     --blue-color: #1786F9;
+    --blue-color-two: #0b2778;
     --black-color-one: #212529;
     --black-color-two: #111111;
+    --black-color-three: #4e4e4e;
+    --green-color-one: #256961;
+    --red-color-one: red;
+    --red-color-two: #fdaca4;
+    --red-color-three: rgb(255, 92, 0);
+    --red-color-four: #e36756;
 }
 
 body {
@@ -402,18 +409,35 @@ body {
     background-color: #212529;
 }
 /* Footer-Copyright-Backtop */
-.footer_backtop i {
+.footer_item i{
     width: 50px;
     height: 50px;
-    background-color: var(--blue-color);
-    color: var(--color-white-two);
     display: flex;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     position: fixed;
+}
+
+.footer_backtop i {
     right: 20px;
-    bottom: 60px;
+    bottom: 30px;
+    background-color: var(--blue-color);
+    color: var(--color-white-two);
+}
+
+.footer_phone i{
+    right: 20px;
+    bottom: 90px;
+    background-color: var(--red-color-four);
+    color: var(--color-white-two);
+}
+
+.footer_mail i{
+    right: 20px;
+    bottom: 150px;
+    background-color: var(--black-color-three);
+    color: var(--color-white-two);
 }
 
 .footer_backtop i:hover {
@@ -449,7 +473,7 @@ body {
 .footer_container p {
     color: rgb(239, 232, 232);
     width: 40%;
-    font-size: 18px;
+    font-size: clamp(8px, 1.6vw + 6px, 18px);
     font-weight: bold;
     margin-left: 2%;
 }
