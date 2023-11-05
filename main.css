@@ -168,7 +168,7 @@ body {
 
 .header_navbar2 a:hover {
     color: var(--color-white-two);
-    transition: 0.7s;
+    transition: 0.2s;
 }
 
 .header_navbar2 a::after {
@@ -201,6 +201,8 @@ body {
     align-items: center;
     height: 70px;
     background-color: #2b2f32;
+    z-index: 100;
+    position: relative;
 }
 .mobile_nav1-group1 {
     display: flex;
