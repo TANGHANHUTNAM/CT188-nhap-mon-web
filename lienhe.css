@@ -1,0 +1,282 @@
+.main{
+    background: url(./img/backgroundcontact3.jpg); /*hình nền background */
+    background-size: cover; /* đảm bảo cho hình nền không bị biến dang khi thu phóng*/
+    background-repeat: no-repeat; /*đảm bảo hình nên không bị lặp lại*/
+    background-attachment: fixed;/*cố định hình nên để khi cuộn trang , nền không cuộn theo*/
+    min-height: 85vh;/*chiều cao tổi thiểu với mỗi trình duyệt*/
+    color: #f0f8ff; /*màu chữ mặc định trong main là trắng*/
+
+}
+.main_content{
+    font-style: italic; /*font chữ*/
+    text-align: center;/*căn giữa*/
+    font-size: larger;/*cỡ chữ*/
+}
+.main_content > div{
+    margin: 10px;
+}
+.main_content > p{
+    text-decoration: none; /*trang trí chữ : không*/
+    font-style: normal;
+}
+.main_contact-container{
+    display: grid; /* áp dụng bố cục lưới cho phần tử cha đang xét*/
+    grid-template-columns: 1fr 1fr; /*chia 2 cột đều nhau*/
+    margin: 50px 20%; /*cách lề trên dưới 50px trái phải 20%*/
+    align-items: center;/*căn giữa các phần tử*/
+    justify-content: center;
+    gap: 10px; /*khoảng cách giữa các hàng và cột*/
+}
+.main_contactInfo {
+    display: flex; /* bố cục dạng flex*/
+    flex-direction: column; /*từ trái sang phải*/
+    text-align: left; /*căn lề trái chữ*/
+    margin-bottom: 50px;
+    
+}
+.main_contactInfo > div{
+    font-size: 40px;
+    color: #fff;
+    margin: 20px;
+    margin-top: 50px;
+}
+.main_map{
+width: 100%;
+height: 400px;
+
+}
+span{
+    cursor:pointer; /*khi re chuột vào những thẻ span con trỏ chuột sẽ thành hình bàn tay*/
+    font-size: larger;/*font chữ lớn*/
+    color: black;
+}
+.box {
+    display: flex;
+    gap: 20px;
+}
+.text{
+    font-size: 35px;
+}
+.main_contactForm {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border: none;
+}
+
+.form {
+    background-color: #f2f2f2;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form .inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form .inputBox input,
+.form .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: none;
+}
+
+.form .inputBox input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form .inputBox input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.form .inputBox label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form .inputBox textarea {
+    height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+}
+.main_decord {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: #D0C6F7;
+    margin: 0 23%;
+    width: 50%;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.item1{
+    display: block;
+    color: #6532BA;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.item2{
+    text-align: center;
+
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    margin-top: 40px;
+    font-weight:bold;
+    color: black;
+}
+.item3 {
+    margin: 35px;
+    text-align: center;
+    
+}
+.item3 >a > button{
+    width: 120px;
+    height: 30px;
+    background-color: red;
+    color: #fff;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    border: red;
+    border-radius: 10px;
+   
+}
+button:hover{
+    background-color: greenyellow;
+}
+.form_send:hover{
+    background-color: #333333da;
+}
+.marquee {
+    color: #fff;
+    font-size: 20px;
+    height: 50px; 
+    width: 100%; /* Chiều rộng của vùng chạy chữ */
+    white-space: nowrap; /* Ngăn chữ xuống dòng */
+    overflow: hidden; /* Ẩn phần chữ vượt quá vùng hiển thị */
+    box-sizing: border-box; /* Bao gồm border và padding trong chiều rộng */
+}
+
+.marquee-text {
+    color: #fff;
+    display: inline-block; /* Hiển thị chữ trên cùng một dòng */
+    animation: marquee-animation 15s linear infinite; /* Áp dụng animation */
+    transition: 1s;
+}
+
+@keyframes marquee-animation {
+    0% { transform: translateX(600%); } /* Chuyển chữ về bên phải */
+    100% { transform: translateX(-100%); } /* Di chuyển chữ sang trái */
+}
+h1{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    /* Các quy tắc cho màn hình nhỏ hơn hoặc bằng 768px */
+    .main_contact-container {
+        grid-template-columns: 1fr; /* Chỉ hiển thị một cột */
+        margin: 50px 10%; /* Điều chỉnh lề */
+    }
+
+    .main_contactForm {
+        margin-left: 0; /* Xóa lề trái */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Các quy tắc cho màn hình nhỏ hơn hoặc bằng 480px */
+    .main_content {
+        font-size: smaller; /* Điều chỉnh kích thước chữ */
+    }
+
+    .main_contact-container {
+        grid-template-columns: 1fr; /* Chỉ hiển thị một cột */
+        margin: 50px 5%; /* Điều chỉnh lề */
+    }
+
+    .main_contactForm {
+        width: 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng */
+        margin-left: 0; /* Xóa lề trái */
+    }
+
+    .main_map-img {
+        width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+        height: auto; /* Tự động tính toán chiều cao */
+        margin-left: 0; /* Xóa lề trái */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_decord {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+        width:100%;
+        height: auto;
+        margin-left: 0
+    }
+    .item1{
+        text-align: center;
+    }
+    .item1, .item2, .item3 {
+        padding: 10px;
+    }
+
+    .item3 {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_decord {
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .scrolling_div {
+        width: 100px;
+        height: 300px;
+        top: 250px;
+    }
+}
+
