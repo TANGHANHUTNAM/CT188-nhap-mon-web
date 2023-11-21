@@ -70,12 +70,15 @@
         width: 70%;
     }
     .footer_container-input input::placeholder {
-            font-size: 15px;
-        }
+        font-size: 15px;
+    }
     .footer_container-input button {
-            width: 30% ;
-        }
+        width: 30% ;
+    }
     .footer_container p {
         width: 30%;
+    }
+    .footer_item {
+        display: none;
     }
 }
