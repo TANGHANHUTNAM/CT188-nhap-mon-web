@@ -1,5 +1,5 @@
 .main{
-    background: url(./img/backgroundcontact3.jpg); /*hình nền background */
+    background: url(./img/ct.jpg); /*hình nền background */
     background-size: cover; /* đảm bảo cho hình nền không bị biến dang khi thu phóng*/
     background-repeat: no-repeat; /*đảm bảo hình nên không bị lặp lại*/
     background-attachment: fixed;/*cố định hình nên để khi cuộn trang , nền không cuộn theo*/
@@ -8,30 +8,38 @@
 
 }
 .main_content{
+    color: black;
     font-style: italic; /*font chữ*/
     text-align: center;/*căn giữa*/
     font-size: larger;/*cỡ chữ*/
+    font-family: 'Times New Roman', Times, serif;
 }
 .main_content > div{
     margin: 10px;
 }
 .main_content > p{
+    color: black;
     text-decoration: none; /*trang trí chữ : không*/
     font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
 }
 .main_contact-container{
     display: grid; /* áp dụng bố cục lưới cho phần tử cha đang xét*/
-    grid-template-columns: 1fr 1fr; /*chia 2 cột đều nhau*/
-    margin: 50px 20%; /*cách lề trên dưới 50px trái phải 20%*/
+    grid-template-columns: auto auto; /*chia 2 cột đều nhau*/
+    margin: 50px 15%; /*cách lề trên dưới 50px trái phải 20%*/
     align-items: center;/*căn giữa các phần tử*/
     justify-content: center;
-    gap: 10px; /*khoảng cách giữa các hàng và cột*/
+    gap: 200px; /*khoảng cách giữa các hàng và cột*/
+    border: 1px solid black;
 }
 .main_contactInfo {
     display: flex; /* bố cục dạng flex*/
     flex-direction: column; /*từ trái sang phải*/
     text-align: left; /*căn lề trái chữ*/
+    width: 500px;
     margin-bottom: 50px;
+    border: 1px solid red;
+    margin-top: 20px;
     
 }
 .main_contactInfo > div{
@@ -40,15 +48,21 @@
     margin: 20px;
     margin-top: 50px;
 }
+.main_contactInfo p{
+    font-style: italic;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .main_map{
 width: 100%;
 height: 400px;
 
 }
-span{
+.main_contactInfo span{
     cursor:pointer; /*khi re chuột vào những thẻ span con trỏ chuột sẽ thành hình bàn tay*/
-    font-size: larger;/*font chữ lớn*/
-    color: black;
+    /*font chữ lớn*/
+    color: rgb(8, 8, 1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .box {
     display: flex;
@@ -57,18 +71,22 @@ span{
 .text{
     font-size: 35px;
 }
+.icon {
+    color: red;
+}
 .main_contactForm {
     background: none;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
-    border: none;
+    border: 1px solid blue;
 }
 
 .form {
-    background-color: #f2f2f2;
-    width: 400px;
+    background-color: #AFCDE0;
+    width: 600px;
+    height: 500px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -77,7 +95,7 @@ span{
 .form h2 {
     text-align: center;
     color: #333;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -89,9 +107,10 @@ span{
 
 .form .inputBox input,
 .form .inputBox textarea {
+    height: 50px;
     width: 100%;
     padding: 10px;
-    font-size: 14px;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -100,11 +119,17 @@ span{
     resize: none;
 }
 
+
 .form .inputBox input[type="submit"] {
     background-color: #333;
+    height: 50px;
+    width: 150px;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: larger;
+    margin-left: 37%;
+    margin-top: -5px;
 }
 
 .form .inputBox input[type="submit"]:hover {
@@ -123,15 +148,17 @@ span{
 }
 
 .form .inputBox textarea {
-    height: 100px;
+    height: 180px;
+}
+.main_map{
+    margin-top: -6px;
+    margin-left: 7%;
+    width: 85%;
+    height: 20vh; /* Đặt chiều cao là 100% chiều cao của viewport */
+    margin-bottom: 50px;
+
 }
 
-@media screen and (max-width: 480px) {
-    .form {
-        width: 100%;
-        padding: 20px;
-    }
-}
 .main_decord {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -196,87 +223,38 @@ button:hover{
 }
 
 .marquee-text {
-    color: #fff;
-    display: inline-block; /* Hiển thị chữ trên cùng một dòng */
-    animation: marquee-animation 15s linear infinite; /* Áp dụng animation */
+    color: black;
+    display: inline-block;
+    animation: marquee-animation 18s linear infinite;
     transition: 1s;
 }
 
 @keyframes marquee-animation {
-    0% { transform: translateX(600%); } /* Chuyển chữ về bên phải */
-    100% { transform: translateX(-100%); } /* Di chuyển chữ sang trái */
+    0% {
+        transform: translateX(190%); /* Dịch chữ sang phải */
+    }
+    100% {
+        transform: translateX(-100%); /* Dịch chữ sang trái */
+    }
 }
 h1{
+    border-bottom: inherit;
     cursor: pointer;
 }
 button{
     cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-    /* Các quy tắc cho màn hình nhỏ hơn hoặc bằng 768px */
-    .main_contact-container {
-        grid-template-columns: 1fr; /* Chỉ hiển thị một cột */
-        margin: 50px 10%; /* Điều chỉnh lề */
-    }
-
-    .main_contactForm {
-        margin-left: 0; /* Xóa lề trái */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* Các quy tắc cho màn hình nhỏ hơn hoặc bằng 480px */
-    .main_content {
-        font-size: smaller; /* Điều chỉnh kích thước chữ */
-    }
-
-    .main_contact-container {
-        grid-template-columns: 1fr; /* Chỉ hiển thị một cột */
-        margin: 50px 5%; /* Điều chỉnh lề */
-    }
-
-    .main_contactForm {
-        width: 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng */
-        margin-left: 0; /* Xóa lề trái */
-    }
-
-    .main_map-img {
-        width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
-        height: auto; /* Tự động tính toán chiều cao */
-        margin-left: 0; /* Xóa lề trái */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main_decord {
+@media screen and (max-width:768px){
+    .main_contact-container,
+    .main_contactInfo,
+    .main_contactForm,
+    .main_content
+    {
         grid-template-columns: 1fr;
-        margin: 0 10px;
-        width:100%;
-        height: auto;
-        margin-left: 0
-    }
-    .item1{
-        text-align: center;
-    }
-    .item1, .item2, .item3 {
-        padding: 10px;
-    }
-
-    .item3 {
-        justify-content: center;
+        margin: 0;
+        padding: 0%;
+        overflow: initial;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .main_decord {
-        margin: 0 5px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .scrolling_div {
-        width: 100px;
-        height: 300px;
-        top: 250px;
-    }
-}
 
