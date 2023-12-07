@@ -105,6 +105,10 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
+.input-box{
+    position: relative;
+}
+
 .input-box i {
     padding: 3px;
     position: relative;
@@ -185,4 +189,18 @@
         flex-direction: column;
         
     }
+}
+
+.show_pass {
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+}
+
+#eye_on {
+    display: none;
+}
+
+#eye_off {
+    display: initial;
 }
