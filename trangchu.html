@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="trangchu.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="responsive-trangchu.css">
 </head>
 <body>
     <header class="header">
@@ -23,12 +22,12 @@
     
             <!-- SEARCH-BAR -->
             <form class="header_navbar1-search">
-                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." id="search_bar" />
                 <button>
                     <i class="fa-solid fa-magnifying-glass icon-search"></i>
                 </button>
             </form>
-                        
+    
             <!-- LOGIN/REGISTER -->
             <div class="header_navbar1-login">
                 <h3>
@@ -161,7 +160,7 @@
             </div>
             <div class="mobile_search">
                 <form class="mobile_search-mobile">
-                    <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm..." id="search_bar-mobile" />
                     <button>
                         <i class="fa-solid fa-magnifying-glass icon-search-mobile"></i>
                     </button>
@@ -1148,7 +1147,7 @@
             <p>Nhận thông tin khuyến mãi từ chúng tôi</p>
             <div class="footer_container-input">
                 <form action="">
-                    <input type="text" placeholder="Nhập email của bạn...">
+                    <input type="text" placeholder="Nhập email của bạn..." id="input_email-contact">
                     <button>Gửi</button>
                 </form>
             </div>
