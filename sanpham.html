@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="sanpham.css">
     <link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+	<script src="sanpham.js"></script>
 </head>
 
 <body> 
@@ -173,590 +178,641 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="main_container1">
-            <div class="main_container1-boloc">
-                <form class="main_container1-boloc-filter">
-                    <div class="item">
-                        <label>tìm kiếm</label>
-                        <select name="category">
-                            <option value="">---</option>
-                            <option value="Laptop">Laptop</option>
-                            <option value="BanPhim">Bàn Phím</option>
-                            <option value="CPU">CPU</option>
-                            <option value="GPU">GPU</option>
-                            <option value="Ram">RAM</option>
-                            <option value="Rom">ROM</option>
-                            <option value="sac">Sạc dự phòng</option>
-                            <option value="tainghe">Tai nghe</option>
-                            <option value="manhinh">Màn hình</option>
-                            <option value="bomach">Bo mạch</option>
-                            <option value="nguon">Nguồn</option>
-                            <option value="loa">Loa</option>
-                            <option value="case">Case máy tính</option>
-                            <option value="tannhiet">Tản nhiệt</option>
-                            <option value="GPU">GPU</option>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <label>Tên sản phẩm</label>
-                        <input name="name" type="text"/>
-                    </div>
-                    <div class="item">
-                        <label>Giá thấp nhất</label>
-                        <input name="minprice" type="number"/>
-                    </div>
-                    <div class="item">
-                        <label>Giá cao nhất</label>
-                        <input name="maxprice" type="number"/>
-                    </div>
-                    <div class="item submit">
-                        <button>Search</button>
-                    </div>
-                </form>
-                <div class="countresult">
-                    
-                </div>
-                <div id="list">
-
-                </div>
+    <main class="container-fluid row main_container1">
+        <div class="col-sm-3 row main_container1-col1">
+			<div class="dropdown row">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tìm kiếm sản phẩm
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu nav nav-pills filter-link">
+                    <li><a href="#" data-filter="1">Giảm giá</a></li>
+                    <li><a href="#" data-filter="2">Bàn phím</a></li>
+                    <li><a href="#" data-filter="3">Chuột máy tính</a></li>
+                    <li><a href="#" data-filter="4">CPU</a></li>
+                    <li><a href="#" data-filter="5">GPU</a></li>
+                    <li><a href="#" data-filter="6">RAM và ROM</a></li>
+                    <li><a href="#" data-filter="7">Sạc dự phòng</a></li>
+                    <li><a href="#" data-filter="8">Tai nghe</a></li>
+                    <li><a href="#" data-filter="9">Màn hình</a></li>
+                    <li><a href="#" data-filter="10">Bo mạch</a></li>
+                    <li><a href="#" data-filter="11">Nguồn</a></li>
+                    <li><a href="#" data-filter="12">Loa</a></li>
+                    <li><a href="#" data-filter="13">Laptop</a></li>
+                    <li><a href="#" data-filter="14">Case máy tính</a></li>
+                    <li><a href="#" data-filter="15">Tản nhiệt</a></li>
+                </ul>
             </div>
-            
-            <a href = "sanpham.html"><p>Sản phẩm khuyến mãi</p></a>
-            
-            <img src="./img/bannerscroll1.webp" alt="">
-            <img src="./img/bannerscroll2.webp" alt="">
-            <img src="./img/bannerscroll1.webp" alt="">
-            <img src="./img/bannerscroll2.webp" alt="">
-            <img src="./img/bannerscroll1.webp" alt="">
-            <img src="./img/bannerscroll2.webp" alt="">
-            <img src="./img/bannerscroll1.webp" alt="">
-            <img src="./img/bannerscroll2.webp" alt="">
-            <img src="./img/bannerscroll1.webp" alt="">
+            <div class="main_container1-ad">
+                <img class="img-responsive" src="./img/bannerscroll1.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll2.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll1.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll2.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll1.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll2.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll1.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll2.webp" alt="">
+                <img class="img-responsive" src="./img/bannerscroll1.webp" alt="">
+            </div>
         </div>
-        <div class="main_container2">
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Giảm giá sốc</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/banphim1.jpg" alt="banphim1" id="banphim1">
-                        <p>Bàn phím cơ không dây DAREU EK75 PRO – BLACK GOLDEN </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-70%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tainghe1.jpg" alt="tainghe1" id="tainghe1">
-                        <p>TAI NGHE BLUETOOTH AIRPODS 3 APPLE MME73 TRẮNG</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-55%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/ram1.jpg" alt="ram1" id="ram1">
-                        <p>KINGSTON - KF432C16BBA/8 - MEMORIA 8GB (1X8GB)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-70%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/laptop1.jpg" alt="laptop1" id="laptop1">
-                        <p>Laptop ASUS ROG Strix G15 G513IE-HN246W </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-50%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Bàn Phím</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/banphim1.jpg" alt="banphim1" id="banphim1">
-                        <p>Bàn phím cơ không dây DAREU EK75 PRO – BLACK GOLDEN </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-33%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/banphim3.jpg" alt="banphim3" id="banphim2">
-                        <p>Bàn phím cơ Gaming DAREU EK75 </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/banphim3.jpg" alt="banphim3" id="banphim3">
-                        <p>Bàn phím cơ Gaming DAREU EK75 </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/banphim1.jpg" alt="banphim1" id="banphim1">
-                        <p>Bàn phím cơ không dây DAREU EK75 PRO – BLACK GOLDEN </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Chuột máy tính</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/chuot1.jpg" alt="chuot1" id="chuot1">
-                        <p>Chuột không dây Logitech MX Anywhere 3 (Hồng)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-50%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/chuot2.jpg" alt="chuot2" id="chuot2">
-                        <p>Chuột Có dây Gaming HyperX Pulsefire FPS Pro RGB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/chuot3.jpg" alt="chuot3" id="chuot3">
-                        <p>Chuột không dây Logitech MX Anywhere 3 (Xanh)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/chuot1.jpg" alt="chuot1" id="chuot1">
-                        <p>Chuột không dây Logitech MX Anywhere 3 (Hồng)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>CPU</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/cpu1.jpg" alt="cpu1" id="cpu1">
-                        <p>Procesador Intel Core i7-13700K 3.4GHz 13th Gen</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/cpu2.jpg" alt="cpu2" id="cpu2">
-                        <p>Procesador Intel Core i3-13700K 3.4GHz 13th Gen</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/cpu3.jpg" alt="cpu3" id="cpu3">
-                        <p>Procesador Intel Core i5-13700K 3.4GHz 13th Gen</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/cpu1.jpg" alt="cpu1" id="cpu1">
-                        <p>Procesador Intel Core i7-13700K 3.4GHz 13th Gen</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>GPU</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/gpu1.jpg" alt="gpu1" id="gpu1">
-                        <p>Asus TUF Gaming GeForce GTX 1650 Super OC 4GB Graphics Card</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/gpu2.jpg" alt="gpu2" id="gpu2">
-                        <p>GIGABYTE GeForce RTX 4060 Ti GAMING OC 16G Graphics Card</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/gpu3.jpg" alt="gpu3" id="gpu3">
-                        <p>COLORFUL GEFORCE RTX 3060 NB DUO LHR 12GB GDDR6</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/gpu4.jpg" alt="gpu4" id="gpu4">
-                        <p>Asus Radeon Phoenix RX 550 2GB GDDR5 Graphics Card</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>RAM và ROM</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/ram1.jpg" alt="ram1" id="ram1">
-                        <p>KINGSTON - KF432C16BBA/8 - MEMORIA 8GB (1X8GB)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-30%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/ram2.jpg" alt="ram2" id="ram2">
-                        <p>HyperX DDR4 (2x8GB) 4000 MHz Predator RGB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/rom1.jpg" alt="rom1" id="rom1">
-                        <p>Samsung 990 PRO 1TB M.2 NVME - PCIE 4.0 GEN 4x4</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/rom2.jpg" alt="rom2" id="rom2">
-                        <p>SSD CRUCIAL 500GB P3 CT500P3SSD8 M2 NVME (SIAE)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Sạc dự phòng</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/sacduphong1.jpg" alt="sacduphong1" id="sacduphong1">
-                        <p>Pin sạc dự phòng 7500mAh AVA+ DS005-PP</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-60%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/sacduphong2.jpg" alt="sacduphong2" id="sacduphong2">
-                        <p>Pin sạc dự phòng 7500mAh AVA+ DS005-PP</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/sacduphong1.jpg" alt="sacduphong1" id="sacduphong1">
-                        <p>Pin sạc dự phòng 7500mAh AVA+ DS005-PP</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/sacduphong2.jpg" alt="sacduphong2" id="sacduphong2">
-                        <p>Pin sạc dự phòng 7500mAh AVA+ DS005-PP</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Tai nghe</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tainghe1.jpg" alt="tainghe1" id="tainghe1">
-                        <p>TAI NGHE BLUETOOTH AIRPODS 3 APPLE MME73 TRẮNG</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tainghe2.jpg" alt="tainghe2" id="tainghe2">
-                        <p>Tai nghe Bluetooth True Wireless AVA+ DS200A-WB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tainghe1.jpg" alt="tainghe1" id="tainghe1">
-                        <p>TAI NGHE BLUETOOTH AIRPODS 3 APPLE MME73 TRẮNG</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tainghe2.jpg" alt="tainghe2" id="tainghe2">
-                        <p>Tai nghe Bluetooth True Wireless AVA+ DS200A-WB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Màn hình</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/manhinh1.jpg" alt="manhinh1" id="manhinh1">
-                        <p>Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-33%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/manhinh2.jpg" alt="manhinh2" id="manhinh2">
-                        <p>Màn hình ASUS VZ279HE-W 27inch WLED IPS 1920x1080 </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/manhinh1.jpg" alt="manhinh1" id="manhinh1">
-                        <p>Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/manhinh2.jpg" alt="manhinh2" id="manhinh2">
-                        <p>Màn hình ASUS VZ279HE-W 27inch WLED IPS 1920x1080 </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Bo mạch</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1">
-                        <p>Asus ROG Zenith II Extreme Alpha</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-50%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1">
-                        <p>Asus ROG Zenith II Extreme Alpha</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1">
-                        <p>Asus ROG Zenith II Extreme Alpha</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1">
-                        <p>Asus ROG Zenith II Extreme Alpha</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Nguồn</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/nguon1.webp" alt="nguon1" id="nguon1">
-                        <p>Fuente De Poder NZXT C750</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-50%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/nguon1.webp" alt="nguon1" id="nguon1">
-                        <p>Fuente De Poder NZXT C750</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/nguon1.webp" alt="nguon1" id="nguon1">
-                        <p>Fuente De Poder NZXT C750</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/nguon1.webp" alt="nguon1" id="nguon1">
-                        <p>Fuente De Poder NZXT C750</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Loa</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/loa1.webp" alt="loa1" id="loa1">
-                        <p>Caixa de Som Bluetooth JBL Go 2</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/loa1.webp" alt="loa1" id="loa1">
-                        <p>Caixa de Som Bluetooth JBL Go 2</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/loa1.webp" alt="loa1" id="loa1">
-                        <p>Caixa de Som Bluetooth JBL Go 2</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/loa1.webp" alt="loa1" id="loa1">
-                        <p>Caixa de Som Bluetooth JBL Go 2</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Laptop</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/laptop1.jpg" alt="laptop1" id="laptop1">
-                        <p>Laptop ASUS ROG Strix G15 G513IE-HN246W </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>-33%</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/laptop1.jpg" alt="laptop1" id="laptop1">
-                        <p>Laptop ASUS ROG Strix G15 G513IE-HN246W </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/laptop1.jpg" alt="laptop1" id="laptop1">
-                        <p>Laptop ASUS ROG Strix G15 G513IE-HN246W </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/laptop1.jpg" alt="laptop1" id="laptop1">
-                        <p>Laptop ASUS ROG Strix G15 G513IE-HN246W </p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Case máy tính</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/casepc1.jpg" alt="case1" id="case1">
-                        <p>Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                        <div class="main_container2-list-SP-sale">
-                            <p>HOT</p>
-                        </div>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/casepc1.jpg" alt="case1" id="case1">
-                        <p>Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/casepc1.jpg" alt="case1" id="case1">
-                        <p>Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/casepc1.jpg" alt="case1" id="case1">
-                        <p>Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container2-item">
-                <div class="main_heading">
-                    <h1>Tản nhiệt</h1>
-                </div>
-                <div class="main_container2-list">
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1">
-                        <p>Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1">
-                        <p>Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1">
-                        <p>Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                    <div class="main_container2-list-SP">
-                        <img src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1">
-                        <p>Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</p>
-                        <h2>giá tiền</h2>
-                        <button style='font-size:24px'>Thêm vào giỏ<i class='fas fa-cart-arrow-down'></i></button>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-9 row main_container2 item-list">
+			<div class="item-child animate__animated" data-group="1">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Giảm giá sốc</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/banphim1.jpg" alt="banphim1" id="banphim1"/></th>
+								<th><img class="img-responsive" src="./img/tainghe1.jpg" alt="tainghe1" id="tainghe1"/></th>
+								<th><img class="img-responsive" src="./img/ram1.jpg" alt="ram1" id="ram1"/></th>
+								<th><img class="img-responsive" src="./img/laptop1.jpg" alt="laptop1" id="laptop1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Bàn phím cơ không dây DAREU EK75 PRO – BLACK GOLDEN</td>
+								<td class="text-info">TAI NGHE BLUETOOTH AIRPODS 3 APPLE MME73 TRẮNG</td>
+								<td class="text-info">KINGSTON - KF432C16BBA/8 - MEMORIA 8GB (1X8GB)</td>
+								<td class="text-info">Laptop ASUS ROG Strix G15 G513IE-HN246W </td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="item-child animate__animated"  data-group="2">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Bàn Phím</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/banphim1.jpg" alt="banphim1" id="banphim1"/></th>
+								<th><img class="img-responsive" src="./img/banphim3.jpg" alt="banphim3" id="banphim3"/></th>
+								<th><img class="img-responsive" src="./img/banphim3.jpg" alt="banphim3" id="banphim3"/></th>
+								<th><img class="img-responsive" src="./img/banphim1.jpg" alt="banphim1" id="banphim1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Bàn phím cơ không dây DAREU EK75 PRO – BLACK GOLDEN</td>
+								<td class="text-info">Bàn phím cơ Gaming DAREU EK75</td>
+								<td class="text-info">Bàn phím cơ Gaming DAREU EK75</td>
+								<td class="text-info">Bàn phím cơ không dây DAREU EK75 PRO – BLACK GOLDEN</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="item-child animate__animated"  data-group="3">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Chuột máy tính</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/chuot1.jpg" alt="chuot1" id="chuot1"/></th>
+								<th><img class="img-responsive" src="./img/chuot2.jpg" alt="chuot2" id="chuot2"/></th>
+								<th><img class="img-responsive" src="./img/chuot3.jpg" alt="chuot3" id="chuot3"/></th>
+								<th><img class="img-responsive" src="./img/chuot1.jpg" alt="chuot1" id="chuot1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Chuột không dây Logitech MX Anywhere 3 (Hồng)</td>
+								<td class="text-info">Chuột Có dây Gaming HyperX Pulsefire FPS Pro RGB</td>
+								<td class="text-info">Chuột không dây Logitech MX Anywhere 3 (Xanh)</td>
+								<td class="text-info">Chuột không dây Logitech MX Anywhere 3 (Hồng)</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated"  data-group="4">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >CPU</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/cpu1.jpg" alt="cpu1" id="cpu1"/></th>
+								<th><img class="img-responsive" src="./img/cpu2.jpg" alt="cpu2" id="cpu2"/></th>
+								<th><img class="img-responsive" src="./img/cpu3.jpg" alt="cpu3" id="cpu3"/></th>
+								<th><img class="img-responsive" src="./img/cpu1.jpg" alt="cpu1" id="cpu1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Procesador Intel Core i7-13700K 3.4GHz 13th Gen</td>
+								<td class="text-info">Procesador Intel Core i3-13700K 3.4GHz 13th Gen</td>
+								<td class="text-info">Procesador Intel Core i5-13700K 3.4GHz 13th Gen</td>
+								<td class="text-info">Procesador Intel Core i7-13700K 3.4GHz 13th Gen</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated"  data-group="5">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >GPU</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/gpu1.jpg" alt="gpu1" id="gpu1"/></th>
+								<th><img class="img-responsive" src="./img/gpu2.jpg" alt="gpu2" id="gpu2"/></th>
+								<th><img class="img-responsive" src="./img/gpu3.jpg" alt="gpu3" id="gpu3"/></th>
+								<th><img class="img-responsive" src="./img/gpu4.jpg" alt="gpu4" id="gpu4"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Asus TUF Gaming GeForce GTX 1650 Super OC 4GB Graphics Card</td>
+								<td class="text-info">GIGABYTE GeForce RTX 4060 Ti GAMING OC 16G Graphics Card</td>
+								<td class="text-info">COLORFUL GEFORCE RTX 3060 NB DUO LHR 12GB GDDR6</td>
+								<td class="text-info">Asus Radeon Phoenix RX 550 2GB GDDR5 Graphics Card</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated"  data-group="6">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >RAM và ROM</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/ram1.jpg" alt="ram1" id="ram1"/></th>
+								<th><img class="img-responsive" src="./img/ram2.jpg" alt="ram2" id="ram2"/></th>
+								<th><img class="img-responsive" src="./img/rom1.jpg" alt="rom1" id="rom1"/></th>
+								<th><img class="img-responsive" src="./img/rom2.jpg" alt="rom2" id="rom2"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">KINGSTON - KF432C16BBA/8 - MEMORIA 8GB (1X8GB)</td>
+								<td class="text-info">HyperX DDR4 (2x8GB) 4000 MHz Predator RGB</td>
+								<td class="text-info">Samsung 990 PRO 1TB M.2 NVME - PCIE 4.0 GEN 4x4</td>
+								<td class="text-info">SSD CRUCIAL 500GB P3 CT500P3SSD8 M2 NVME (SIAE)</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="7">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Sạc dự phòng</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/sacduphong1.jpg" alt="sacduphong1" id="sacduphong1"/></th>
+								<th><img class="img-responsive" src="./img/sacduphong2.jpg" alt="sacduphong2" id="sacduphong2"/></th>
+								<th><img class="img-responsive" src="./img/sacduphong1.jpg" alt="sacduphong1" id="sacduphong1"/></th>
+								<th><img class="img-responsive" src="./img/sacduphong2.jpg" alt="sacduphong2" id="sacduphong2"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Pin sạc dự phòng 7500mAh AVA+ DS005-PP</td>
+								<td class="text-info">Pin sạc dự phòng 7500mAh AVA+ DS005-PP</td>
+								<td class="text-info">Pin sạc dự phòng 7500mAh AVA+ DS005-PP</td>
+								<td class="text-info">Pin sạc dự phòng 7500mAh AVA+ DS005-PP</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="8">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Tai nghe</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/tainghe1.jpg" alt="tainghe1" id="tainghe1"/></th>
+								<th><img class="img-responsive" src="./img/tainghe2.jpg" alt="tainghe2" id="tainghe2"/></th>
+								<th><img class="img-responsive" src="./img/tainghe1.jpg" alt="tainghe1" id="tainghe1"/></th>
+								<th><img class="img-responsive" src="./img/tainghe2.jpg" alt="tainghe2" id="tainghe2"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">TAI NGHE BLUETOOTH AIRPODS 3 APPLE MME73 TRẮNG</td>
+								<td class="text-info">Tai nghe Bluetooth True Wireless AVA+ DS200A-WB</td>
+								<td class="text-info">TAI NGHE BLUETOOTH AIRPODS 3 APPLE MME73 TRẮNG</td>
+								<td class="text-info">Tai nghe Bluetooth True Wireless AVA+ DS200A-WB</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="9">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Màn hình</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/manhinh1.jpg" alt="manhinh1" id="manhinh1"/></th>
+								<th><img class="img-responsive" src="./img/manhinh2.jpg" alt="manhinh2" id="manhinh2"/></th>
+								<th><img class="img-responsive" src="./img/manhinh1.jpg" alt="manhinh1" id="manhinh1"/></th>
+								<th><img class="img-responsive" src="./img/manhinh2.jpg" alt="manhinh2" id="manhinh2"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</td>
+								<td class="text-info">Màn hình ASUS VZ279HE-W 27inch WLED IPS 1920x1080</td>
+								<td class="text-info">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</td>
+								<td class="text-info">Màn hình ASUS VZ279HE-W 27inch WLED IPS 1920x1080</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="10">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Bo mạch</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1"/></th>
+								<th><img class="img-responsive" src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1"/></th>
+								<th><img class="img-responsive" src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1"/></th>
+								<th><img class="img-responsive" src="./img/mainboard1.webp" alt="mainboard1" id="mainboard1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Asus ROG Zenith II Extreme Alpha</td>
+								<td class="text-info">Asus ROG Zenith II Extreme Alpha</td>
+								<td class="text-info">Asus ROG Zenith II Extreme Alpha</td>
+								<td class="text-info">Asus ROG Zenith II Extreme Alpha</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="11">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Nguồn</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/nguon1.webp" alt="nguon1" id="nguon1"/></th>
+								<th><img class="img-responsive" src="./img/nguon1.webp" alt="nguon1" id="nguon1"/></th>
+								<th><img class="img-responsive" src="./img/nguon1.webp" alt="nguon1" id="nguon1"/></th>
+								<th><img class="img-responsive" src="./img/nguon1.webp" alt="nguon1" id="nguon1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Fuente De Poder NZXT C750</td>
+								<td class="text-info">Fuente De Poder NZXT C750</td>
+								<td class="text-info">Fuente De Poder NZXT C750</td>
+								<td class="text-info">Fuente De Poder NZXT C750</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="12">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Loa</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/loa1.webp" alt="loa1" id="loa1"/></th>
+								<th><img class="img-responsive" src="./img/loa1.webp" alt="loa1" id="loa1"/></th>
+								<th><img class="img-responsive" src="./img/loa1.webp" alt="loa1" id="loa1"/></th>
+								<th><img class="img-responsive" src="./img/loa1.webp" alt="loa1" id="loa1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Caixa de Som Bluetooth JBL Go 2</td>
+								<td class="text-info">Caixa de Som Bluetooth JBL Go 2</td>
+								<td class="text-info">Caixa de Som Bluetooth JBL Go 2</td>
+								<td class="text-info">Caixa de Som Bluetooth JBL Go 2</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="13">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Laptop</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/laptop1.jpg" alt="laptop1" id="laptop1"/></th>
+								<th><img class="img-responsive" src="./img/laptop1.jpg" alt="laptop1" id="laptop1"/></th>
+								<th><img class="img-responsive" src="./img/laptop1.jpg" alt="laptop1" id="laptop1"/></th>
+								<th><img class="img-responsive" src="./img/laptop1.jpg" alt="laptop1" id="laptop1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Laptop ASUS ROG Strix G15 G513IE-HN246W</td>
+								<td class="text-info">Laptop ASUS ROG Strix G15 G513IE-HN246W</td>
+								<td class="text-info">Laptop ASUS ROG Strix G15 G513IE-HN246W</td>
+								<td class="text-info">Laptop ASUS ROG Strix G15 G513IE-HN246W</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="14">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Case máy tính</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/casepc1.jpg" alt="case1" id="case1"/></th>
+								<th><img class="img-responsive" src="./img/casepc1.jpg" alt="case1" id="case1"/></th>
+								<th><img class="img-responsive" src="./img/casepc1.jpg" alt="case1" id="case1"/></th>
+								<th><img class="img-responsive" src="./img/casepc1.jpg" alt="case1" id="case1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</td>
+								<td class="text-info">Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</td>
+								<td class="text-info">Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</td>
+								<td class="text-info">Máy tính PC Gaming NVS LITGH C07 i3 10105F GTX 1650 4GB</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <div class="item-child animate__animated" data-group="15">
+				<div class="row main_container2-heading">
+					<p class="col-sm-4 col-xs-4"></p>
+					<h1 class="col-sm-4 col-xs-4" >Tản nhiệt</h1>
+					<p class="col-sm-4 col-xs-4"></p>
+				</div>
+				<div class="row table-responsive main_container2-list">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><img class="img-responsive" src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1"/></th>
+								<th><img class="img-responsive" src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1"/></th>
+								<th><img class="img-responsive" src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1"/></th>
+								<th><img class="img-responsive" src="./img/tannhiet1.webp" alt="tannhiet1" id="tannhiet1"/></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-info">Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</td>
+								<td class="text-info">Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</td>
+								<td class="text-info">Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</td>
+								<td class="text-info">Deepcool Gammaxx L240 V2 (DP-H12RF-GL240V2)</td>
+							</tr>
+							<tr>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+								<td ><h3>1.000.000</h3></td>
+							</tr>
+							<tr>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+								<td><button ><label>Thêm vào giỏ<label><i class='fas fa-cart-arrow-down'></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
         </div>
     </main>
 
