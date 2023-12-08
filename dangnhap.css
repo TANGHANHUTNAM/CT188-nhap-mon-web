@@ -197,10 +197,14 @@
     right: 30px;
 }
 
-#eye_on {
+#eye_off {
     display: none;
 }
 
-#eye_off {
-    display: initial;
+.input-box.error small {
+    color: var(--red-color-one)
+}
+
+.input-box.success small {
+    color: rgb(0, 255, 0);
 }

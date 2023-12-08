@@ -176,22 +176,24 @@
     <main class="main">
         <div class="main_formbox">
             <!-------------- LOGIN --------------->
-            <div class="login_container" id="login">
+            <form class="login_container" id="login">
                 <div class="container-top">
-                    <span>Bạn không có tài khoản? <a href="#" onclick="register()">Tạo tài khoản</a></span>
+                    <span>Bạn không có tài khoản? <a href="#" onclick="ClickRegister()">Tạo tài khoản</a></span>
                     <header>Đăng Nhập</header>
                 </div>
                 <div class="input-box">
                     <input type="text" class="input-field" placeholder="Email" id="login_input-mail">
                     <i class="fa-regular fa-envelope"></i>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
                     <input type="password" class="input-field" placeholder="Password" id="login_input-password">
                     <i class="fa-solid fa-lock"></i>
-                    <span class="show_pass" >
-                        <i class="fa-solid fa-eye" id="eye_on" onclick="onClick()"></i>
-                        <i class="fa-solid fa-eye-slash" id="eye_off" onclick="onClick()"></i>
+                    <span class="show_pass" onclick="ShowPass()">
+                        <i class="fa-solid fa-eye" id="eye_on"></i>
+                        <i class="fa-solid fa-eye-slash" id="eye_off"></i>
                     </span>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
                     <input type="submit" class="submit" value="Đăng nhập">
@@ -216,39 +218,37 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </form>
             <!-------------- REGISTER --------------->
-            <div class="register_container" id="register">
+            <form class="register_container" id="register" >
                 <div class="container-top">
-                    <span>Bạn đã có tài khoản? <a href="#" onclick="login()">Đăng Nhập</a></span>
+                    <span>Bạn đã có tài khoản? <a href="#" onclick="ClickLogin()">Đăng Nhập</a></span>
                     <header>Đăng Ký</header>
                 </div>
                 <div class="container-two-col">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Họ" id="register_input-ho">
+                        <input type="text" class="input-field" placeholder="Họ" id="register_input-ho" required>
                         <i class="fa-regular fa-user"></i>
+                        <small class="error"></small>
                     </div>
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Tên" id="register_input-ten">
+                        <input type="text" class="input-field" placeholder="Tên" id="register_input-ten" required>
                         <i class="fa-regular fa-user"></i>
+                        <small class="error"></small>
                     </div>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email" id="register_input-mail">
+                    <input type="text" class="input-field" placeholder="Email" id="register_input-email" required>
                     <i class="fa-regular fa-envelope"></i>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Password" id="register_input-password">
+                    <input type="text" class="input-field" placeholder="Password" id="register_input-password" required>
                     <i class="fa-solid fa-lock"></i>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
                     <input type="submit" class="submit" value="Đăng ký">
-                </div>
-                <div class="container-two-col">
-                    <div class="col-one">
-                        <input type="checkbox" id="register-check">
-                        <label for="register-check">Ghi nhớ mật khẩu</label>
-                    </div>
                 </div>
                 <div class="container-ggface">
                     <p>Hoặc với</p>
@@ -261,7 +261,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
 
