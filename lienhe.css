@@ -81,7 +81,7 @@ height: 400px;
 }
 
 .form {
-    background-color: #368bb3;
+    background-color: #2c95eb;
     width: 600px;
     height: 500px;
     padding: 30px;
@@ -266,18 +266,35 @@ button{
         max-width: 100%;
         margin: 0;  
     }
+    .form .inputBox input,
+    .form .inputBox textarea {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: none;
+    }   
+    .form .inputBox textarea{
+        height: 90px;
+
+    }
     .form{
-        width: 100%;
-        background-color: #d4cedd;
+        width: 800px;
+        height: 400px;
+        margin: 20px 0;
+        background-color: #2c95eb;
+        
     }
     .main_map{
-        max-width: 100%;
+        width: 100%;
         margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-  }
+}
   @media (max-width:767px){
     .main_contact-container {
         display: flex;
@@ -301,9 +318,28 @@ button{
         margin: 0;  
         
     }
+    .form .inputBox input,
+    .form .inputBox textarea {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: none;
+    }   
+    .form .inputBox textarea{
+        height: 90px;
+
+    }
     .form{
-        width: 100%;
-        background-color: #d4cedd;
+        width: 800px;
+        height: 400px;
+        margin: 20px 0;
+        background-color: #2c95eb;
         
     }
     .main_map{
