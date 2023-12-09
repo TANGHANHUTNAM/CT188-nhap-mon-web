@@ -1,6 +1,4 @@
-body{
-    overflow-x: hidden;
-}
+
 .main{
     background: url(./img/ct.jpg); /*hình nền background */
     background-size: cover; /* đảm bảo cho hình nền không bị biến dang khi thu phóng*/
@@ -83,7 +81,7 @@ height: 400px;
 }
 
 .form {
-    background-color: #AFCDE0;
+    background-color: #2c95eb;
     width: 600px;
     height: 500px;
     padding: 30px;
@@ -94,14 +92,14 @@ height: 400px;
 .form h2 {
     text-align: center;
     color: #333;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 .form .inputBox {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 .form .inputBox input,
@@ -244,14 +242,13 @@ h1{
 button{
     cursor: pointer;
 }
-@media screen and (min-width: 767px) and (max-width: 1023px){
+@media  (min-width: 767px) and (max-width: 1023px){
     .main_contact-container {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
         gap:20px;
-        max-width: ;
     }
     .main_contactInfo{
         display: flex;
@@ -269,15 +266,35 @@ button{
         max-width: 100%;
         margin: 0;  
     }
+    .form .inputBox input,
+    .form .inputBox textarea {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: none;
+    }   
+    .form .inputBox textarea{
+        height: 90px;
+
+    }
     .form{
-        width: 100%;
-        background-color: #d4cedd;
+        width: 800px;
+        height: 400px;
+        margin: 20px 0;
+        background-color: #2c95eb;
+        
     }
     .main_map{
-        max-width: 100%;
+        width: 100%;
         margin: 0;
     }
-  }
+}
   @media (max-width:767px){
     .main_contact-container {
         display: flex;
@@ -301,9 +318,28 @@ button{
         margin: 0;  
         
     }
+    .form .inputBox input,
+    .form .inputBox textarea {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: none;
+    }   
+    .form .inputBox textarea{
+        height: 90px;
+
+    }
     .form{
-        width: 100%;
-        background-color: #d4cedd;
+        width: 800px;
+        height: 400px;
+        margin: 20px 0;
+        background-color: #2c95eb;
         
     }
     .main_map{
@@ -320,7 +356,6 @@ button{
     .main_contactInfo,
     .main_map,
     .main_decord {
-        display: grid;
         width: 100%;
         margin: 0%;
     }

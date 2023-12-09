@@ -204,22 +204,25 @@
     
             </div>
             <div class="main_contactForm">
-                <form class="form" action="">
-                    <h2>Gửi phản hồi</h2>
-                    <div class="inputBox">
-                        <input type="text" placeholder="Họ và tên" required="required">
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" placeholder="Email" required="required">
-                    </div>
-                    <div class="inputBox">
-                        <textarea name="" id="nhap_lieu" placeholder="Nhập lời nhắn..." cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="inputBox">
-                        <input class="form_send" type="submit" value="Gửi">
-                    </div>
+                <form class="form" id="form-Id" action="">
+                  <h2>Gửi phản hồi</h2>
+                  <div class="inputBox">
+                    <input type="text" id="nameInput" name="name" placeholder="Họ và tên" required="required">
+                  </div>
+                  <div class="inputBox">
+                    <input type="email" id="emailInput" name="email" placeholder="Email" required="required">
+                  </div>
+                  <div class="inputBox">
+                    <input type="tel" id="phoneInput" name="phone" placeholder="số điện thoại" required="required">
+                  </div>
+                  <div class="inputBox">
+                    <textarea name="message" id="messageInput" placeholder="Nhập lời nhắn..." cols="30" rows="10"></textarea>
+                  </div>
+                  <div class="inputBox">
+                    <input class="form_send" type="submit" value="Gửi" onsubmit="submitForm(event)">
+                  </div>
                 </form>
-            </div>
+              </div>
         </div>
         <div class="main_map"><iframe class="main_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.44715404586!2d105.7164679567338!3d10.035174077301155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0895a51d60719%3A0x9d76b0035f6d53d0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBD4bqnbiBUaMah!5e0!3m2!1svi!2s!4v1700138082301!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -238,6 +241,7 @@
                 <a href="./sanpham.html"><button >XEM NGAY</button></a>
             </div>
         </div>
+        <script src="./lienhe.js" type="application/javascript"></script>
     </main>
 
     <footer class="footer">
