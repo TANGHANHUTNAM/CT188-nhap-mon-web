@@ -1,6 +1,4 @@
-body{
-    overflow-x: hidden;
-}
+
 .main{
     background: url(./img/ct.jpg); /*hình nền background */
     background-size: cover; /* đảm bảo cho hình nền không bị biến dang khi thu phóng*/
@@ -244,14 +242,13 @@ h1{
 button{
     cursor: pointer;
 }
-@media screen and (min-width: 767px) and (max-width: 1023px){
+@media  (min-width: 767px) and (max-width: 1023px){
     .main_contact-container {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
         gap:20px;
-        max-width: ;
     }
     .main_contactInfo{
         display: flex;
@@ -276,6 +273,9 @@ button{
     .main_map{
         max-width: 100%;
         margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
   }
   @media (max-width:767px){
@@ -320,7 +320,6 @@ button{
     .main_contactInfo,
     .main_map,
     .main_decord {
-        display: grid;
         width: 100%;
         margin: 0%;
     }
