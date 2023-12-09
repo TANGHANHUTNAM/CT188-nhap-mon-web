@@ -81,7 +81,7 @@ height: 400px;
 }
 
 .form {
-    background-color: #AFCDE0;
+    background-color: #368bb3;
     width: 600px;
     height: 500px;
     padding: 30px;
@@ -92,14 +92,14 @@ height: 400px;
 .form h2 {
     text-align: center;
     color: #333;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 .form .inputBox {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 .form .inputBox input,

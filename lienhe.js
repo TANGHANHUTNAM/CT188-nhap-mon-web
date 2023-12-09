@@ -1,60 +1,55 @@
-function validateEmail(email) {
-  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailPattern.test(email);
-}
+function submitForm(event) {
+  event.preventDefault(); // Ngăn chặn gửi form mặc định
 
-// Lắng nghe sự kiện click nút Gửi
-document.querySelector('.main_contactForm input[type="submit"]').addEventListener('click', function(event) {
-  // Ngăn chặn hành vi mặc định của nút Gửi (tải lại trang)
-  event.preventDefault();
+  // Lấy giá trị từ các trường input
+  const nameInput = document.getElementById("nameInput");
+  const emailInput = document.getElementById("emailInput");
+  const phoneInput = document.getElementById("phoneInput");
+  const messageInput = document.getElementById("messageInput");
 
-  // Lấy giá trị email từ input
-  var emailInput = document.querySelector('.main_contactForm input[name="email"]');
-  var emailValue = emailInput.value;
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const phone = phoneInput.value.trim();
+  const message = messageInput.value.trim();
 
-  // Kiểm tra tính hợp lệ của email
-  if (!validateEmail(emailValue)) {
-    alert('Vui lòng nhập địa chỉ email hợp lệ.');
+  // Kiểm tra họ tên không được trống
+  if (name === "") {
+    alert("Vui lòng nhập họ và tên.");
     return;
   }
 
-  // Tiếp tục xử lý form (nếu email hợp lệ)
-  submitForm();
-});
+  // Kiểm tra địa chỉ email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Vui lòng nhập địa chỉ email hợp lệ.");
+    return;
+  }
 
-function submitForm() {
-  // Kiểm tra thông tin người dùng trước khi gửi
-  var nameInput = document.querySelector('.main_contactForm input[name="name"]');
-  var emailInput = document.querySelector('.main_contactForm input[name="email"]');
-  
-  if (nameInput.value.trim() === '') {
-    alert('Vui lòng nhập họ và tên');
-    nameInput.focus();
-    return false;
-  }
-  
-  if (emailInput.value.trim() === '') {
-    alert('Vui lòng nhập email');
-    emailInput.focus();
-    return false;
-  }
-  
-  // Gửi dữ liệu form liên hệ bằng Ajax
-  var form = document.getElementById('form-Id');
-  var xhr = new XMLHttpRequest();
-  var url = form.action; // Lấy giá trị action của form
-  
-  xhr.open('POST', url, true);
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      // Xử lý phản hồi từ máy chủ (nếu cần thiết)
-      alert('Cảm ơn bạn đã liên hệ!');
+  // Kiểm tra số điện thoại chỉ chứa chữ số và lời nhắn có ít nhất 8 kí tự
+  const phoneRegex = /^\d+$/;
+  if (!phoneRegex.test(phone) || message.length < 8) {
+    if (!phoneRegex.test(phone)) {
+      alert("Vui lòng nhập số điện thoại hợp lệ (chỉ chứa chữ số).");
     }
-  };
+    if (message.length < 8) {
+      alert("Lời nhắn phải có ít nhất 8 kí tự.");
+    }
+    return;
+  }
+
+  // Thực hiện các hành động khác tại đây (ví dụ: gửi dữ liệu)
   
-  var formData = new FormData(form);
-  var data = new URLSearchParams(formData).toString();
-  xhr.send(data);
+
+  // Reset giá trị của các input và textarea
+  nameInput.value = "";
+  emailInput.value = "";
+  phoneInput.value = "";
+  messageInput.value = "";
+
+  // Hiển thị thông báo gửi thông tin thành công
+  alert("Thông tin đã được gửi thành công!");
 }
+
+// Gán sự kiện submit cho form
+const form = document.getElementById("form-Id");
+form.addEventListener("submit", submitForm);
