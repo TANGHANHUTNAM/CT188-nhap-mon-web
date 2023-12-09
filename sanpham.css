@@ -1,4 +1,8 @@
 
+.filter {
+    text-align: left;
+}
+
 .header_navbar1-login div{
     font-weight: bolder;
     font-size: 1.15rem;
@@ -54,5 +58,3 @@ h3 {
     color: var(--black-color-three);
     font-size: 1.1rem;
 }
-
-
