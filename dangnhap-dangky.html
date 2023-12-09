@@ -26,7 +26,7 @@
 
             <!-- SEARCH-BAR -->
             <form class="header_navbar1-search">
-                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." id="search_bar"/>
                 <button>
                     <i class="fa-solid fa-magnifying-glass icon-search"></i>
                 </button>
@@ -164,7 +164,7 @@
             </div>
             <div class="mobile_search">
                 <form class="mobile_search-mobile">
-                    <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm..." id="search_bar-mobile"/>
                     <button>
                         <i class="fa-solid fa-magnifying-glass icon-search-mobile"></i>
                     </button>
@@ -176,18 +176,24 @@
     <main class="main">
         <div class="main_formbox">
             <!-------------- LOGIN --------------->
-            <div class="login_container" id="login">
+            <form class="login_container" id="login">
                 <div class="container-top">
-                    <span>Bạn không có tài khoản? <a href="#" onclick="register()">Tạo tài khoản</a></span>
+                    <span>Bạn không có tài khoản? <a href="#" onclick="ClickRegister()">Tạo tài khoản</a></span>
                     <header>Đăng Nhập</header>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email">
+                    <input type="text" class="input-field" placeholder="Email" id="login_input-mail">
                     <i class="fa-regular fa-envelope"></i>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
+                    <input type="password" class="input-field" placeholder="Password" id="login_input-password">
                     <i class="fa-solid fa-lock"></i>
+                    <span class="show_pass" onclick="ShowPass()">
+                        <i class="fa-solid fa-eye" id="eye_on"></i>
+                        <i class="fa-solid fa-eye-slash" id="eye_off"></i>
+                    </span>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
                     <input type="submit" class="submit" value="Đăng nhập">
@@ -198,7 +204,7 @@
                         <label for="login-check">Ghi nhớ mật khẩu</label>
                     </div>
                     <div class="col-two">
-                        <label for=""><a href="">Quên mật khẩu?</a></label>
+                        <a href="">Quên mật khẩu?</a>
                     </div>
                 </div>
                 <div class="container-ggface">
@@ -212,39 +218,37 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </form>
             <!-------------- REGISTER --------------->
-            <div class="register_container" id="register">
+            <form class="register_container" id="register" >
                 <div class="container-top">
-                    <span>Bạn đã có tài khoản? <a href="#" onclick="login()">Đăng Nhập</a></span>
+                    <span>Bạn đã có tài khoản? <a href="#" onclick="ClickLogin()">Đăng Nhập</a></span>
                     <header>Đăng Ký</header>
                 </div>
                 <div class="container-two-col">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Họ">
+                        <input type="text" class="input-field" placeholder="Họ" id="register_input-ho" required>
                         <i class="fa-regular fa-user"></i>
+                        <small class="error"></small>
                     </div>
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Tên">
+                        <input type="text" class="input-field" placeholder="Tên" id="register_input-ten" required>
                         <i class="fa-regular fa-user"></i>
+                        <small class="error"></small>
                     </div>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email">
+                    <input type="text" class="input-field" placeholder="Email" id="register_input-email" required>
                     <i class="fa-regular fa-envelope"></i>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
+                    <input type="text" class="input-field" placeholder="Password" id="register_input-password" required>
                     <i class="fa-solid fa-lock"></i>
+                    <small class="error"></small>
                 </div>
                 <div class="input-box">
                     <input type="submit" class="submit" value="Đăng ký">
-                </div>
-                <div class="container-two-col">
-                    <div class="col-one">
-                        <input type="checkbox" id="register-check">
-                        <label for="register-check">Ghi nhớ mật khẩu</label>
-                    </div>
                 </div>
                 <div class="container-ggface">
                     <p>Hoặc với</p>
@@ -257,7 +261,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
 
@@ -266,7 +270,7 @@
             <p>Nhận thông tin khuyến mãi từ chúng tôi</p>
             <div class="footer_container-input">
                 <form action="">
-                    <input type="text" placeholder="Nhập email của bạn...">
+                    <input type="text" placeholder="Nhập email của bạn..." id="input_email-contact">
                     <button>Gửi</button>
                 </form>
             </div>
@@ -349,27 +353,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        
-        var lg = document.getElementById("login");
-        var rg = document.getElementById("register");
-
-        function login() {
-            lg.style.left = "0px";
-            rg.style.right = "-520px";
-            lg.style.opacity = 1;
-            rg.style.opacity = 0;
-        }
-
-        function register() {
-            lg.style.left = "-510px";
-            rg.style.right = "0px";
-            lg.style.opacity = 0;
-            rg.style.opacity = 1;
-        }
-
-    </script>
+    <script src="./dangnhap.js"></script>
 </body>
 
 </html>
