@@ -1,4 +1,8 @@
 
+.filter {
+    text-align: left;
+}
+
 .header_navbar1-login div{
     font-weight: bolder;
     font-size: 1.15rem;
