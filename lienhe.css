@@ -6,7 +6,9 @@
     background-attachment: fixed;/*cố định hình nên để khi cuộn trang , nền không cuộn theo*/
     min-height: 85vh;/*chiều cao tổi thiểu với mỗi trình duyệt*/
     color: #f0f8ff; /*màu chữ mặc định trong main là trắng*/
-
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px 0;
 }
 .main_content{
     color: black;
@@ -14,6 +16,8 @@
     text-align: center;/*căn giữa*/
     font-size: larger;/*cỡ chữ*/
     font-family: 'Times New Roman', Times, serif;
+    max-width: 100%;
+    position: relative;
 }
 .main_content > div{
     margin: 10px;
@@ -24,18 +28,33 @@
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
 }
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .main_content {
+        margin: 0;
+        padding: 3%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main_content {
+        display: block;
+    }
+}
+
 .main_contact-container{
     display: grid; /* áp dụng bố cục lưới cho phần tử cha đang xét*/
-    grid-template-columns: 30% 70%; /*chia 2 cột 3-7*/
-    margin: 50px 10%; /*cách lề trên dưới 50px trái phải 20%*/
+    grid-template-columns: 1fr 3fr; /*chia 2 cột 3-7*/
+    margin: 10px 13%; /*cách lề trên dưới 50px trái phải 20%*/
     gap: 2%;
     box-sizing: border-box;
 }
 .main_contactInfo {
+    gap: 0 10px;
+    width: 100%;
     display: flex; /* bố cục dạng flex*/
     flex-direction: column; /*từ trái sang phải*/
     text-align: left; /*căn lề trái chữ*/
-    width: 100%;
     margin-bottom: 50px;
     margin-top: 20px;
     
@@ -73,25 +92,26 @@ height: 400px;
     color: red;
 }
 .main_contactForm {
+    max-height: 100%;
     width: 100%;
     background: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .form {
+    justify-content: center;
+    text-align: center;
     background-color: #2c95eb;
     width: 100%;
-    height: 500px;
+    height: 100%;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form h2 {
-    text-align: center;
     color: #333;
     font-size: 30px;
     margin-bottom: 10px;
@@ -99,13 +119,17 @@ height: 400px;
 }
 
 .form .inputBox {
+    height: 20%;
+    padding-left: 5px;
+    width: 100%;
+    border-radius: 10px;
     position: relative;
-    margin-bottom: 2%;
 }
 
 .form .inputBox input,
 .form .inputBox textarea {
-    height: 50px;
+    padding-left: 5px;
+    height: 90%;
     width: 100%;
     padding: 10px;
     font-size: 20px;
@@ -115,19 +139,20 @@ height: 400px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     outline: none;
     resize: none;
+    margin: auto;
 }
 
 
 .form .inputBox input[type="submit"] {
+    margin: auto;
+    border-radius: 10px;
+    height: 70%;
     background-color: #333;
-    height: 50px;
     width: 150px;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: larger;
-    margin-left: 37%;
-    margin-top: -5px;
 }
 
 .form .inputBox input[type="submit"]:hover {
@@ -214,7 +239,7 @@ button:hover{
     color: #fff;
     font-size: 20px;
     height: 50px; 
-    width: 100%; /* Chiều rộng của vùng chạy chữ */
+    width: 90%; /* Chiều rộng của vùng chạy chữ */
     white-space: nowrap; /* Ngăn chữ xuống dòng */
     overflow: hidden; /* Ẩn phần chữ vượt quá vùng hiển thị */
     box-sizing: border-box; /* Bao gồm border và padding trong chiều rộng */
@@ -255,7 +280,6 @@ button{
         align-items: left;
         justify-content: left;
         margin: 0;
-        width: 100%;
         text-align: none;
     }
     .main_contact-container{
@@ -263,7 +287,6 @@ button{
     }
     .main_contactForm{
         display: flex;
-        max-width: 100%;
         margin: 0;  
     }
     .form .inputBox input,
@@ -302,19 +325,17 @@ button{
         margin: 50px 0; /* Điều chỉnh margin theo ý muốn */
         padding: 0;
         gap:20px;
-        max-width: 100%;
+        max-width: 90%;
     }
     .main_contactInfo{
         display: flex;
         align-items: left;
         justify-content: left;
         margin: 0;
-        width: 100%;
         
     }
     .main_contactForm{
         display: flex;
-        width: 100%;
         margin: 0;  
         
     }
@@ -336,7 +357,7 @@ button{
 
     }
     .form{
-        width: 800px;
+        width: 100%;
         height: 400px;
         margin: 20px 0;
         background-color: #2c95eb;
