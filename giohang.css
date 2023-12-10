@@ -1,0 +1,121 @@
+:root {
+    --color-white-one: #f3f3f3;
+    --color-white-two: white;
+    --blue-color: #1786F9;
+    --blue-color-two: #0b2778;
+    --black-color-one: #212529;
+    --black-color-two: #111111;
+    --black-color-three: #4e4e4e;
+    --green-color-one: #256961;
+    --red-color-one: red;
+    --red-color-two: #fdaca4;
+    --red-color-three: rgb(255, 92, 0);
+    --red-color-four: #e36756;
+}
+
+
+main {
+    margin: 15px 13%;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: var(--color-white-two);
+}
+
+.wrapper h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--red-color-four);
+    color: white;
+    border-radius: 5px;
+    border: solid 3px var(--black-color-two);
+    font-size: clamp(1rem, 2.7vw, 3rem);
+}
+
+.table-cart {
+    border-top:var(--black-color-two) solid 2px;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+}
+
+.table-cart th {
+    border-bottom: var(--black-color-two) solid 2px;
+    height: 50px;
+    font-size: clamp(0.8rem, 1.5vw, 3rem);
+    padding: 5px;
+}
+
+.table-body {
+    width: 100%;
+}
+
+.table-body td {
+    border-bottom: var(--black-color-two) solid 2px;
+    height: 100%;
+    text-align: justify;
+    height: 80px;
+    text-align: center;
+}
+.img-product {
+    width: 10%;
+}
+
+.img-product img {
+    width: 100%;
+}
+
+.quantity-product {
+    width: 12%;
+}
+
+.type-product {
+    width: 15%;
+    color: var(--blue-color);
+    font-weight: bold;
+}
+.delete-product {
+    width: 10%;
+    color: var(--red-color-one);
+    cursor: pointer;
+}
+
+.price-product {
+    color: var(--red-color-four);
+}
+
+.total-price, sup {
+    color: var(--red-color-one);
+}
+
+.footer-cart {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.8rem, 1.5vw, 2.5rem);
+}
+
+.Total {
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+.btn-pay {
+    width: 20%;
+    margin: 15px;
+    cursor: pointer;
+    color: var(--color-white-one);
+    background-color: var(--green-color-one);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-pay:hover {
+    background-color: var(--red-color-four);
+}
+
+@media (max-width: 767px) {
+    main {
+        margin: 15px 5px;
+    }
+}

@@ -19,7 +19,7 @@
     <script src="./sanpham.js"></script>
 </head>
 
-<body> 
+<body onload="numberCart()" onload="loadUser(email)"> 
     <header class="header">
         <!-- NAVBAR1 -->
         <div class="header_navbar1">
@@ -50,7 +50,7 @@
                 <h3>
                     <a href="giohang.html">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <p class="no-ordered-item">0</p>
+                        <p class="no-ordered-item"></p>
                     </a>
                 </h3>
             </div>
@@ -198,52 +198,52 @@
                 <h1 class="header_calalog text-center p-2">LAPTOP</h1>
                 <div class="row">
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/laptop1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Laptop</h5>
-                                <p class="card-text describe m-0 py-1">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
+                                <h5 class="card-title text-center h2 type-product">Laptop01</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">21.390.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">21390000</span><sup style="color: red">đ</sup></h4> 
+                                    <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="card my-2 product-item">
+                            <img src="./img/laptop1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center h2 type-product">Laptop02</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h4 class="mb-2"><span class="price-product">21390000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/laptop1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Laptop</h5>
-                                <p class="card-text describe m-0 py-1">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
+                                <h5 class="card-title text-center h2 type-product">Laptop03</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">21.390.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">21390000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/laptop1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Laptop</h5>
-                                <p class="card-text describe m-0 py-1">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
+                                <h5 class="card-title text-center h2 type-product">Laptop04</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">21.390.000đ</h4>
-                                    <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
-                            <img src="./img/laptop1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Laptop</h5>
-                                <p class="card-text describe m-0 py-1">Laptop ASUS ROG Strix G15 G513IE-HN246W (R7-4800H | 8GB | 512GB | GeForce RTX™ 3050Ti 4GB | 15.6' FHD 144Hz | Win 11)</p>
-                                <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">21.390.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">21390000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
@@ -258,52 +258,52 @@
                 <h1 class="header_calalog text-center p-2">MÀN HÌNH</h1>
                 <div class="row">
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/manhinh1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Màn hình</h5>
-                                <p class="card-text describe m-0 py-1">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
+                                <h5 class="card-title text-center h2 type-product">Màn hình01</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">1.950.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">1950000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/manhinh1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Màn hình</h5>
-                                <p class="card-text describe m-0 py-1">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
+                                <h5 class="card-title text-center h2 type-product ">Màn hình02</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">1.950.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">1950000</span><sup style="color: red">đ</sup></h4>
+                                    <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="card my-2 product-item">
+                            <img src="./img/manhinh1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center h2 type-product ">Màn hình03</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h4 class="mb-2"><span class="price-product">1950000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/manhinh1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Màn hình</h5>
-                                <p class="card-text describe m-0 py-1">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
+                                <h5 class="card-title text-center h2 type-product ">Màn hình04</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">1.950.000đ</h4>
-                                    <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
-                            <img src="./img/manhinh1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Màn hình</h5>
-                                <p class="card-text describe m-0 py-1">Màn hình E-DRA EGM22F75 21.5 inch FullHD 75Hz</p>
-                                <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">1.950.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">1950000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
@@ -318,52 +318,52 @@
                 <h1 class="header_calalog text-center p-2">PC</h1>
                 <div class="row">
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/casepc1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">PC</h5>
-                                <p class="card-text describe m-0 py-1">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
+                                <h5 class="card-title text-center h2 type-product ">PC01</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">9.399.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">9399000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/casepc1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">PC</h5>
-                                <p class="card-text describe m-0 py-1">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
+                                <h5 class="card-title text-center h2 type-product ">PC02</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">9.399.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">9399000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/casepc1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">PC</h5>
-                                <p class="card-text describe m-0 py-1">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
+                                <h5 class="card-title text-center h2 type-product ">PC03</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">9.399.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">9399000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/casepc1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">PC</h5>
-                                <p class="card-text describe m-0 py-1">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
+                                <h5 class="card-title text-center h2 type-product ">PC04</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Máy tính chơi game NVS LITGH C01 i3 10105F GTX 1650</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">9.399.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">9399000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
@@ -378,52 +378,52 @@
                 <h1 class="header_calalog text-center p-2">CHUỘT - BÀN PHÍM</h1>
                 <div class="row">
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/chuot1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Chuột</h5>
-                                <p class="card-text describe m-0 py-1">Chuột không dây Logitech MX Anywhere 3 (910-005994) (Hồng)</p>
+                                <h5 class="card-title text-center h2 type-product ">Chuột02</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Chuột không dây Logitech MX Anywhere 3 (910-005994) (Hồng)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">1.649.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">1649000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/chuot1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Chuột</h5>
-                                <p class="card-text describe m-0 py-1">Chuột không dây Logitech MX Anywhere 3 (910-005994) (Hồng)</p>
+                                <h5 class="card-title text-center h2 type-product ">Chuột03</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Chuột không dây Logitech MX Anywhere 3 (910-005994) (Hồng)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">1.649.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">1649000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/banphim3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Bàn phím</h5>
-                                <p class="card-text describe m-0 py-1">Bàn phím cơ Gaming DAREU EK75 White-black _Dream switch (Đen - trắng)</p>
+                                <h5 class="card-title text-center h2 type-product ">Bàn phím01</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Bàn phím cơ Gaming DAREU EK75 White-black _Dream switch (Đen - trắng)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">599.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">599000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/banphim3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Bàn phím</h5>
-                                <p class="card-text describe m-0 py-1">Bàn phím cơ Gaming DAREU EK75 White-black _Dream switch (Đen - trắng)</p>
+                                <h5 class="card-title text-center h2 type-product ">Bàn phím02</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Bàn phím cơ Gaming DAREU EK75 White-black _Dream switch (Đen - trắng)</p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">599.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">599000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
@@ -438,56 +438,56 @@
                 <h1 class="header_calalog text-center p-2">Ghế</h1>
                 <div class="row">
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/ghecongthaihoc.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Ghế</h5>
-                                <p class="card-text describe m-0 py-1">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
+                                <h5 class="card-title text-center h2 type-product ">Ghế01</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
                                 </p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">5.050.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">5050000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/ghecongthaihoc.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Ghế</h5>
-                                <p class="card-text describe m-0 py-1">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
+                                <h5 class="card-title text-center h2 type-product ">Ghế02</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
                                 </p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">5.050.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">5050000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/ghecongthaihoc.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Ghế</h5>
-                                <p class="card-text describe m-0 py-1">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
+                                <h5 class="card-title text-center h2 type-product ">Ghế03</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
                                 </p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">5.050.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">5050000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                        <div class="card my-2">
+                        <div class="card my-2 product-item">
                             <img src="./img/ghecongthaihoc.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center h2 type-product ">Ghế</h5>
-                                <p class="card-text describe m-0 py-1">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
+                                <h5 class="card-title text-center h2 type-product ">Ghế04</h5>
+                                <p class="card-text describe m-0 py-1 product-name">Ghế Công thái học Xiaomi Manson Vera (Có kê chân, Lưới Wintex, Đen/Xám)
                                 </p>
                                 <div class="d-flex flex-column align-items-center">
-                                    <h4 class="mb-2 price">5.050.000đ</h4>
+                                    <h4 class="mb-2"><span class="price-product">5050000</span><sup style="color: red">đ</sup></h4>
                                     <button class="btn btn-addcard">THÊM VÀO GIỎ HÀNG</button>
                                 </div>
                             </div>
@@ -585,7 +585,7 @@
             </div>
         </div>
     </footer>
-    <script src="./dangnhap.js"></script>
+    <script src="./giohang.js"></script>
 </body>
 
 </html>

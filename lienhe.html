@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./responsive.css">
 </head>
 
-<body>
+<body onload="numberCart()" onload="loadUser(email)">
     <header class="header">
         <!-- NAVBAR1 -->
         <div class="header_navbar1">
@@ -46,7 +46,7 @@
                 <h3>
                     <a href="giohang.html">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <div>Giỏ Hàng</div>
+                        <p class="no-ordered-item"></p>
                     </a>
                 </h3>
             </div>
@@ -330,7 +330,7 @@
             </div>
         </div>
     </footer>
-    <script src="./dangnhap.js"></script>
+    <script src="./giohang.js"></script>
 </body>
 
 </html>

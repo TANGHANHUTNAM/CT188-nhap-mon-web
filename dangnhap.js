@@ -152,12 +152,18 @@ login.addEventListener("submit", function(e){
         } else if(email === data.email && password === data.password){
             e.preventDefault();
             alert("Đăng nhập thành công!");
-            username.innerText = data.ten;
-            window.location.href="./trangchu.html";
+            let con = email;
+            loadUser(con);
         }
     }
 });
 
+
+function loadUser(email){
+    var temp = document.getElementById("username");
+    let list = JSON.parse(localStorage.getItem(email));
+    temp.innerHTML = list.ten;
+}
 
 
 // Khai báo các biến input register
@@ -257,6 +263,8 @@ register.addEventListener("submit", function(e){
         window.location.href="./dangnhap-dangky.html"; 
     }
 });
+
+
 
 
 
